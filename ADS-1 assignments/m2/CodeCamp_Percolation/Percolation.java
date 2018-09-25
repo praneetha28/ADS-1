@@ -16,7 +16,7 @@ class Percolation {
 		return grid[r][c];
 	}
 	public int getIndex(int i, int j) {
-		return ((i*size) + j) + 1;
+		return (i*size) + j;
 	}
 	public void open(int r, int c) {
 		if (isOpen(r, c) == false) {
