@@ -56,7 +56,7 @@ public final class Solution {
         while (j < size1) {
             c[k++] = b[j++];
         }
-        for (int n = 0; n < c.length - 1 ;n++) {
+        for (int n = 0; n < c.length - 1; n++) {
             System.out.print(c[n] + ",");
         }
         System.out.println(c[c.length - 1]);
