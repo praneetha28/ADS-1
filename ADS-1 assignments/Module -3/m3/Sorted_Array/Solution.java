@@ -5,10 +5,6 @@ import java.util.Scanner;
 /**.
  * { item_description }
  */
-import java.util.Arrays;
-/**.
- * { item_description }
- */
 public final class Solution {
     /**.
      * Constructs the object.
@@ -43,12 +39,13 @@ public final class Solution {
         int i = 0;
         int j = 0;
         int k = 0;
-        while (i<size && j <size1)
+        while (i < size && j < size1)
         {
-            if (a[i] < b[j])
+            if (a[i] < b[j]) {
                 c[k++] = a[i++];
-            else
+            } else {
                 c[k++] = b[j++];
+            }
         }
         while (i < size) {
             c[k++] = a[i++];
