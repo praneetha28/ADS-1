@@ -43,8 +43,7 @@ public final class Solution {
         int i = 0;
         int j = 0;
         int k = 0;
-        while (i < size && j < size1)
-        {
+        while (i < size && j < size1) {
             if (a[i] < b[j]) {
                 c[k++] = a[i++];
             } else {
@@ -57,7 +56,7 @@ public final class Solution {
         while (j < size1) {
             c[k++] = b[j++];
         }
-        for (int n = 0; n < c.length - 1 ; n++) {
+        for (int n = 0; n < c.length - 1 ;n++) {
             System.out.print(c[n] + ",");
         }
         System.out.println(c[c.length - 1]);
