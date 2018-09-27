@@ -82,11 +82,11 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main( final String[] args ) {
+    public static void main (final String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int i = 0;
-        while ( i < n) {
+        while (i < n) {
             String line = sc.next();
             if (balancedPranthesis(line)) {
                 System.out.println("YES");
@@ -109,16 +109,16 @@ public final class Solution {
         // if (len == 0) {
         //  return true;
         // }
-        for ( int i = 0; i < len; i++ ) {
+        for (int i = 0; i < len; i++) {
             char c = str.charAt(i);
-            if ( c == '(' || c == '[' || c == '{') {
+            if (c == '(' || c == '[' || c == '{') {
                 ll.push(c);
             } else {
-                if ( ll.isEmpty()) {
+                if (ll.isEmpty()) {
                     return false;
                 }
                 // char top = stack.peek();
-                if ( c == ')' && ll.peek() == '(') {
+                if (c == ')' && ll.peek() == '(') {
                     ll.pop();
                 } else if (c == ']' && ll.peek() == '[') {
                     ll.pop();
