@@ -26,7 +26,7 @@ class LinkedListStack {
     /**.
      * Constructs the object.
      */
-    public LinkedListStack() {
+    LinkedListStack() {
         head = null;
     }
     /**.
@@ -82,7 +82,7 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main (final String[] args) {
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int i = 0;
@@ -129,10 +129,11 @@ public final class Solution {
                 }
             }
         }
-        if (!ll.isEmpty()) {
-            return false;
-        } else {
-            return true;
-        }
+        return ll.isEmpty();
+        // if (ll.isEmpty()) {
+        //     return true;
+        // } else {
+        //     return false;
+        // }
     }
 }
