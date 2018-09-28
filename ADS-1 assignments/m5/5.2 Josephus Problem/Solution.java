@@ -31,17 +31,20 @@ public final class Solution {
             int n = Integer.parseInt(tokens[1]);
             // System.out.println(n);
             LinkedList deque = new LinkedList();
+            String str = "";
             for (int j = 0; j < m; j++) {
                 // System.out.println("for loop");
                 deque.insertLast(j);
             }
             while (!deque.isEmpty()) {
+
                 // System.out.println("while");
                 for (int k = 0; k < n-1; k++) {
                     deque.insertLast(deque.deleteFront());
                 }
-                System.out.print(deque.deleteFront() + " ");
+                str += deque.deleteFront() + " ";
             }
+            System.out.print(str.substring(0, str.length() - 1));
             System.out.println();
         }
     }
