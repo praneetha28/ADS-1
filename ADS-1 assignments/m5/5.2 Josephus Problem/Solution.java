@@ -21,7 +21,7 @@ public final class Solution {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         sc.nextLine();
-        while(sc.hasNextLine()) {
+        while (sc.hasNextLine()) {
             String line = sc.nextLine();
             String[] tokens = line.split(" ");
             // System.out.println(tokens[0]);
@@ -39,7 +39,7 @@ public final class Solution {
             while (!deque.isEmpty()) {
 
                 // System.out.println("while");
-                for (int k = 0; k < n-1; k++) {
+                for (int k = 0; k < n - 1; k++) {
                     deque.insertLast(deque.deleteFront());
                 }
                 str += deque.deleteFront() + " ";
