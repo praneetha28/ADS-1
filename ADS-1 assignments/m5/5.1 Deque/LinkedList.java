@@ -77,7 +77,7 @@ class LinkedList {
             tail = temp;
             tail.next = null;
             // popped.data = null;
-            popped.next = null;
+            // popped.next = null;
             size--;
         }
 
