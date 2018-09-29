@@ -1,25 +1,48 @@
+/**.
+ * { item_description }
+ */
 import java.util.Scanner;
+/**.
+ * { item_description }
+ */
 import java.util.Iterator;
+/**.
+ * { item_description }
+ */
 import java.util.LinkedList;
+/**.
+ * { item_description }
+ */
 import java.lang.*;
-import java.io.*;
+/**.
+ * Class for add large numbers.
+ */
 class AddLargeNumbers {
-	// static LinkedList link;
-	// AddLargeNumbers() {
-
-	// }
+	/**.
+	 * { function_description }
+	 *
+	 * @param      number  The number
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
     public static LinkedList numberToDigits(String number) {
     	LinkedList link = new LinkedList();
     	int n = number.length();
     	// System.out.println(n);
     	for (int i = 0; i < n; i++) {
-    		char c = number.charAt(i);
+    		Character c = number.charAt(i);
             link.push(c);
     	}
     	// String str = link.displayAll();
     	return link;
     }
-
+    /**.
+     * { function_description }
+     *
+     * @param      list  The list
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static String digitsToNumber(LinkedList list) {
 
     	String str = new String();
@@ -35,23 +58,65 @@ class AddLargeNumbers {
             }
             return s;
     }
-
+    /**.
+     * Adds large numbers.
+     *
+     * @param      list1  The list 1
+     * @param      list2  The list 2
+     *
+     * @return     { description_of_the_return_value }
+     */
     // public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
     // 	LinkedListStack ll1 = new LinkedListStack();
     // 	LinkedListStack ll2 = new LinkedListStack();
     // 	LinkedList resLink = new LinkedList();
     // 	while (!list1.isEmpty()) {
-    // 		ll1.push(list1.pop());
+    // 		ll1.push((Character) list1.pop());
+    // 		// System.out.println(c);
     // 	}
     // 	while (!list2.isEmpty()) {
-    // 		ll2.push(list2.pop());
+    // 		ll2.push((Character) list2.pop());
+    // 		// System.out.println(c);
     // 	}
 
+	   //  int carry = 0;
+    // 	while(!ll1.isEmpty())
+    // 	{
+	   //      int sum = ((ll1.pop()-'0') + (ll2.pop()-'0') + carry);
+	   //      System.out.println(sum);
+	   //      resLink.push(sum%10 + '0');
+	   //      carry = sum/10;
+    // 	}
+
+	   //  while (!ll2.isEmpty())
+	   //  {
+	   //      int sum = ((ll2.pop()-'0')+carry);
+	   //      System.out.println(sum);
+	   //      resLink.push(sum%10 + '0');
+	   //      carry = sum/10;
+	   //  }
+	   //  while (carry != 0)
+	   //      resLink.push(carry+'0');
+
+	   //  return resLink;
     // }
 }
-
+/**.
+ * Class for solution.
+ */
 public class Solution {
-    public static void main(String[] args) {
+	/**.
+	 * Constructs the object.
+	 */
+	private Solution() {
+
+	}
+	/**.
+	 * { function_description }
+	 *
+	 * @param      args  The arguments
+	 */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         String p = sc.nextLine();

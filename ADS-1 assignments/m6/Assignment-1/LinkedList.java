@@ -84,9 +84,22 @@ class LinkedList {
       //       return str;
 	}
     public static char pop() {
-        char value = head.value;
-        head = head.next;
-        return value;
+        if (tail != null) {
+            Node temp = null;
+            Node popped = tail;
+            char item = popped.value;
+            Node element = head;
+            while (element != tail) {
+                temp = element;
+                element = element.next;
+            }
+            tail = temp;
+            tail.next = null;
+            // popped.next = null;
+            size--;
+            return item;
+        }
+        return 0;
     }
     /**.
      * { function_description }
@@ -121,5 +134,8 @@ class LinkedList {
             // return item;
         }
         // return 0;
+    }
+    public static int size() {
+        return size;
     }
 }
