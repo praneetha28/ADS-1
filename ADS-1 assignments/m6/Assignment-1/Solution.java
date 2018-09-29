@@ -14,23 +14,26 @@ import java.util.LinkedList;
  * Class for add large numbers.
  */
 class AddLargeNumbers {
-	/**.
-	 * { function_description }
-	 *
-	 * @param      number  The number
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
+    AddLargeNumbers() {
+
+    }
+    /**.
+     * { function_description }
+     *
+     * @param      number  The number
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static LinkedList numberToDigits(final String number) {
-    	LinkedList link = new LinkedList();
-    	int n = number.length();
-    	// System.out.println(n);
-    	for (int i = 0; i < n; i++) {
-    		Character c = number.charAt(i);
+        LinkedList link = new LinkedList();
+        int n = number.length();
+        // System.out.println(n);
+        for (int i = 0; i < n; i++) {
+            Character c = number.charAt(i);
             link.push(c);
-    	}
-    	// String str = link.displayAll();
-    	return link;
+        }
+        // String str = link.displayAll();
+        return link;
     }
     /**.
      * { function_description }
@@ -41,16 +44,16 @@ class AddLargeNumbers {
      */
     public static String digitsToNumber(final LinkedList list) {
 
-    	String str = new String();
+        String str = new String();
             // Node temp = head;
             Iterator it = list.iterator();
-			while (it.hasNext()) {
-    			str += it.next();
-			}
-			char[] c = str.toCharArray();
-			String s = "";
+            while (it.hasNext()) {
+                str += it.next();
+            }
+            char[] c = str.toCharArray();
+            String s = "";
             for (int i = c.length - 1; i >= 0; i--) {
-            	s += c[i];
+                s += c[i];
             }
             return s;
     }
@@ -62,56 +65,57 @@ class AddLargeNumbers {
      *
      * @return     { description_of_the_return_value }
      */
-    // public static LinkedList addLargeNumbers(final LinkedList list1, final LinkedList list2) {
-    // 	LinkedListStack ll1 = new LinkedListStack();
-    // 	LinkedListStack ll2 = new LinkedListStack();
-    // 	LinkedList resLink = new LinkedList();
-    // 	while (!list1.isEmpty()) {
-    // 		ll1.push((Character) list1.pop());
-    // 		// System.out.println(c);
-    // 	}
-    // 	while (!list2.isEmpty()) {
-    // 		ll2.push((Character) list2.pop());
-    // 		// System.out.println(c);
-    // 	}
+    // public static LinkedList addLargeNumbers(
+    // final LinkedList list1, final LinkedList list2) {
+    //  LinkedListStack ll1 = new LinkedListStack();
+    //  LinkedListStack ll2 = new LinkedListStack();
+    //  LinkedList resLink = new LinkedList();
+    //  while (!list1.isEmpty()) {
+    //      ll1.push((Character) list1.pop());
+    //      // System.out.println(c);
+    //  }
+    //  while (!list2.isEmpty()) {
+    //      ll2.push((Character) list2.pop());
+    //      // System.out.println(c);
+    //  }
 
-	   //  int carry = 0;
-    // 	while(!ll1.isEmpty())
-    // 	{
-	   //      int sum = ((ll1.pop()-'0') + (ll2.pop()-'0') + carry);
-	   //      System.out.println(sum);
-	   //      resLink.push(sum%10 + '0');
-	   //      carry = sum/10;
-    // 	}
+       //  int carry = 0;
+    //  while(!ll1.isEmpty())
+    //  {
+       //      int sum = ((ll1.pop()-'0') + (ll2.pop()-'0') + carry);
+       //      System.out.println(sum);
+       //      resLink.push(sum%10 + '0');
+       //      carry = sum/10;
+    //  }
 
-	   //  while (!ll2.isEmpty())
-	   //  {
-	   //      int sum = ((ll2.pop()-'0')+carry);
-	   //      System.out.println(sum);
-	   //      resLink.push(sum%10 + '0');
-	   //      carry = sum/10;
-	   //  }
-	   //  while (carry != 0)
-	   //      resLink.push(carry+'0');
+       //  while (!ll2.isEmpty())
+       //  {
+       //      int sum = ((ll2.pop()-'0')+carry);
+       //      System.out.println(sum);
+       //      resLink.push(sum%10 + '0');
+       //      carry = sum/10;
+       //  }
+       //  while (carry != 0)
+       //      resLink.push(carry+'0');
 
-	   //  return resLink;
+       //  return resLink;
     // }
 }
 /**.
  * Class for solution.
  */
 public final class Solution {
-	/**.
-	 * Constructs the object.
-	 */
-	private Solution() {
+    /**.
+     * Constructs the object.
+     */
+    private Solution() {
 
-	}
-	/**.
-	 * { function_description }
-	 *
-	 * @param      args  The arguments
-	 */
+    }
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
@@ -134,7 +138,7 @@ public final class Solution {
             //     System.out.println(AddLargeNumbers.digitsToNumber(result));
             //     break;
             default:
-            	break;
+                break;
         }
     }
 
