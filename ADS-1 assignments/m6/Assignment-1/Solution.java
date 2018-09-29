@@ -14,7 +14,10 @@ import java.util.LinkedList;
  * Class for add large numbers.
  */
 class AddLargeNumbers {
-    AddLargeNumbers() {
+    /**.
+     * Constructs the object.
+     */
+    private AddLargeNumbers() {
 
     }
     /**.
