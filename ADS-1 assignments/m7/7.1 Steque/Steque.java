@@ -46,13 +46,16 @@ class Steque {
     }
     public void enqueue(int item) {
     	// System.out.println("in enqueue");
-    	if (tail == null) {
+    	if (tail == null || head == null) {
+    		// System.out.println("if");
     		Node n = new Node();
     		n.value = item;
     		n.next = null;
-    		head = tail;
+    		head = n;
+    		tail = n;
     		size++;
     	} else {
+    		// System.out.println("else");
     		Node oldtail = tail;
     		Node n = new Node();
     		n.value = item;
@@ -74,11 +77,6 @@ class Steque {
                 temp = temp.next;
             }
             return str.substring(0, str.length() - 2);
-        } else if (size == 1){
-        	String str = "";
-        	Node temp = head;
-        	str += temp.value;
-        	return str;
         }
         return "";
     }
