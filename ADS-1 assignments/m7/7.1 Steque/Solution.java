@@ -10,8 +10,8 @@ public final class Solution {
 		Scanner sc = new Scanner(System.in);
 		int n = Integer.parseInt(sc.nextLine());
 		for (int i = 0; i < n; i++) {
+			Steque stq = new Steque();
 			while (sc.hasNextLine()) {
-				Steque stq = new Steque();
 				String line = sc.nextLine();
 				String[] tokens = line.split(" ");
 				switch (tokens[0]) {
@@ -34,8 +34,11 @@ public final class Solution {
 						System.out.println(stq.display());
 						break;
 				}
+				if (tokens[0].equals("")) {
+					System.out.println();
+					break;
+				}
 			}
-			System.out.println();
 		}
 	}
 }
