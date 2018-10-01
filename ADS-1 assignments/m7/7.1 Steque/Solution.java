@@ -29,7 +29,7 @@ public final class Solution {
                 String[] tokens = line.split(" ");
                 switch (tokens[0]) {
                     case "push":
-    stq.push(Integer.parseInt(tokens[1]));
+                        stq.push(Integer.parseInt(tokens[1]));
                         System.out.println(stq.display());
                         break;
                     case "pop":
