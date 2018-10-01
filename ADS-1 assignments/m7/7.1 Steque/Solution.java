@@ -2,10 +2,23 @@
  * { item_description }
  */
 import java.util.Scanner;
+/**.
+ * { item_description }
+ */
 public final class Solution {
+	/**.
+	 * Constructs the object.
+	 */
 	private Solution() {
-
+		/**.
+		 * { item_description }
+		 */
 	}
+	/**.
+	 * { function_description }
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = Integer.parseInt(sc.nextLine());
@@ -32,6 +45,8 @@ public final class Solution {
 					case "enqueue":
 						stq.enqueue(Integer.parseInt(tokens[1]));
 						System.out.println(stq.display());
+						break;
+					default:
 						break;
 				}
 				if (tokens[0].equals("")) {
