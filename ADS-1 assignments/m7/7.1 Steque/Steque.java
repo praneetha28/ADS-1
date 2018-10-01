@@ -74,6 +74,11 @@ class Steque {
                 temp = temp.next;
             }
             return str.substring(0, str.length() - 2);
+        } else if (size == 1){
+        	String str = "";
+        	Node temp = head;
+        	str += temp.value;
+        	return str;
         }
         return "";
     }
