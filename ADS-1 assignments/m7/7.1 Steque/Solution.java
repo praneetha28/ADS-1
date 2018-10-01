@@ -21,7 +21,13 @@ public final class Solution {
 						break;
 					case "pop":
 						stq.pop();
-						System.out.println(stq.display());
+						if (stq.isEmpty()) {
+							// System.out.println("empty");
+							System.out.println("Steque is empty.");
+						} else {
+							// System.out.println("not empty");
+							System.out.println(stq.display());
+						}
 						break;
 					case "enqueue":
 						stq.enqueue(Integer.parseInt(tokens[1]));
