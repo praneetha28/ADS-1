@@ -19,6 +19,10 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
+    // time complexity for the main method is N^2
+    // Because there are one for loop and one while loop.
+    // For loop iterates N times and while loop also
+    //  iterates until it has next line
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = Integer.parseInt(sc.nextLine());
