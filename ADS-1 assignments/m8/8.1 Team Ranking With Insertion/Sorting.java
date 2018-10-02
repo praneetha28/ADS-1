@@ -26,10 +26,13 @@ class Sorting {
              		min = j;
 	            }
     		}
-    		Team temp = team[min];
-	        team[min] = team[i];
-	        team[i] = temp;
+    		swap(team, i, min);
 		}
+	}
+	public void swap(Team[] team, int i, int min) {
+		Team temp = team[min];
+	    team[min] = team[i];
+	    team[i] = temp;
 	}
 	public String toString() {
 		// System.out.println("in print");
