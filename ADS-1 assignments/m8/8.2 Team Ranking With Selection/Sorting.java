@@ -21,7 +21,6 @@ class Sorting {
     		for (int j = i; j > 0 && team[j].compareTo(team[j-1]) > -1; j--) {
              	swap(team, j, j-1);
     		}
-
 		}
 	}
 // time complexity of this method is O(1). It swaps the elements only once.
