@@ -18,7 +18,7 @@ class Sorting {
 // In first for loop and second loop it iterates through the size of array
 	public void insertion() {
 		for (int i = 0;i < size; i++) {
-    		for (int j = i; j < 0 && team[j].compareTo(team[j-1]) > -1; j--) {
+    		for (int j = i; j > 0 && team[j].compareTo(team[j-1]) > -1; j--) {
              	swap(team, j, j-1);
     		}
 
