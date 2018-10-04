@@ -38,22 +38,22 @@ class Sorting {
         	System.out.println("Insertion sort method invoked...");
         	return;
         }
-        	int mid = low + (high - low) / 2;
-	        sort(aux, arr, low, mid);
-	        sort(aux , arr, mid + 1, high);
-	        if (!less(arr[mid + 1], arr[mid])) {
-                for (int i = low; i <= high; i++) {
-                    aux[i] = arr[i];
-                }
-	        	System.out.println("Array is already sorted. So, skipped the call to merge...");
-	        	return;
-	        }
-	        merge(arr, aux, low, mid, high);
+        int mid = low + (high - low) / 2;
+	    sort(aux, arr, low, mid);
+	    sort(aux , arr, mid + 1, high);
+	    if (!less(arr[mid + 1], arr[mid])) {
+            for (int i = low; i <= high; i++) {
+                aux[i] = arr[i];
+            }
+	        System.out.println("Array is already sorted. So, skipped the call to merge...");
+	        return;
+	    }
+	    merge(arr, aux, low, mid, high);
     }
     public void sort(Comparable[] array) {
     	// arr = new Comparable[array.length];
     	Comparable[] aux = array.clone();
-    	sort(array, aux, 0, array.length - 1);
+    	sort(aux, array, 0, array.length - 1);
     }
     public void merge(Comparable[] arr, Comparable[] aux, int low, int mid, int high) {
     	int i = low;
