@@ -111,6 +111,9 @@ class LinkedList {
         }
         size++;
     }
+    public void insertAt(final int value) {
+
+    }
     /**.
      * Determines if empty.
      *
@@ -143,6 +146,6 @@ class LinkedList {
             }
             return str.substring(0, str.length() - 2);
         }
-        return "[]";
+        return "";
     }
 }

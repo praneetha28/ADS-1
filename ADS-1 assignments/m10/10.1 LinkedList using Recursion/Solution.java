@@ -29,8 +29,12 @@ public final class Solution {
                 //     System.out.println(ll.displayAll());
                 //     break;
                 case "reverse":
-                    ll.reverse();
-                    System.out.println(ll.displayAll());
+                    if (!ll.isEmpty()) {
+                        ll.reverse();
+                        System.out.println(ll.displayAll());
+                    } else {
+                        System.out.println("No elements to reverse.");
+                    }
                     break;
             }
         }
