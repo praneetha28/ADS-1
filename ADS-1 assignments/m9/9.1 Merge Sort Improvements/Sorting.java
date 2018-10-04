@@ -31,6 +31,7 @@ class Sorting {
 		str += arr[arr.length - 1] + "]";
 		return str;
 	}
+// time complexity is O(1)
 	public void sort(Comparable[] arr, Comparable[] aux, int low, int high)
     {
         if (high <= low + 7) {
@@ -50,11 +51,13 @@ class Sorting {
 	    }
 	    merge(arr, aux, low, mid, high);
     }
+//time complexity is O(1)
     public void sort(Comparable[] array) {
     	// arr = new Comparable[array.length];
     	Comparable[] aux = array.clone();
     	sort(aux, array, 0, array.length - 1);
     }
+// time complexity is O(N)
     public void merge(Comparable[] arr, Comparable[] aux, int low, int mid, int high) {
     	int i = low;
     	int j = mid + 1;
@@ -70,6 +73,7 @@ class Sorting {
     		}
     	}
     }
+// time complexity is O(1)
     public boolean less(Comparable a, Comparable b) {
         return a.compareTo(b) < 0;
     }
