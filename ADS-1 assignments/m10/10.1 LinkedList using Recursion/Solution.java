@@ -24,10 +24,10 @@ public final class Solution {
             String line = sc.nextLine();
             String[] tokens = line.split(" ");
             switch (tokens[0]) {
-                // case "insertAt":
-                //     ll.insertAt(Integer.parseInt(tokens[1]));
-                //     System.out.println(ll.displayAll());
-                //     break;
+                case "insertAt":
+                    ll.insertAt(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));
+                    System.out.println(ll.displayAll());
+                    break;
                 case "reverse":
                     if (!ll.isEmpty()) {
                         ll.reverse();

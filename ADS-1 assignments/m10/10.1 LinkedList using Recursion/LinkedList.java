@@ -111,7 +111,24 @@ class LinkedList {
         }
         size++;
     }
-    public void insertAt(final int value) {
+    public void insertAt(final int pos, final int value) {
+        // System.out.println("..");
+        Node new_node = new Node();
+        if (pos < 0 || pos > size + 1) {
+            System.out.println("Can't insert at this position.");
+            return;
+        }
+        if (pos == 0) {
+            insertFront(value);
+        } else {
+            Node temp = head;
+            for (int i= 1; i < pos - 1; i++) {
+                temp = temp.next;
+            }
+            new_node.value = value;
+            new_node.next = temp.next;
+            temp.next = new_node;
+        }
 
     }
     /**.
