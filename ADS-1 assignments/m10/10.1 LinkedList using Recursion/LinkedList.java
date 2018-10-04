@@ -18,6 +18,7 @@ class LinkedList {
      * { var_description }
      */
     private int size= 0;
+    private static int count = 0;
     /**.
      * Class for node.
      */
@@ -112,24 +113,24 @@ class LinkedList {
         size++;
     }
     public void insertAt(int pos, int value) {
-        int count = 0;
-        insertAt(head, pos, value, count);
+        insertAt(head, pos, value);
     }
-    public void insertAt(Node head, int pos, int value, int count) {
+    public void insertAt(Node head, int pos, int value) {
         if (pos == 0) {
             insertFront(value);
-            count++;
-        } else {
-            if (count == pos) {
+            return;
+        }
+            if (count + 1 == pos) {
                 Node new_node = new Node();
-                Node temp = head;
+                // Node temp = head;
                 new_node.value = value;
                 new_node.next = head.next;
                 head.next = new_node;
+                count = 0;
+                return;
             }
             count++;
-            insertAt(head.next, pos, value, count);
-        }
+            insertAt(head.next, pos, value);
     }
     /**.
      * Determines if empty.
