@@ -111,21 +111,25 @@ class LinkedList {
         }
         size++;
     }
-    public void insertAt(final int pos, final int value) {
-        // System.out.println("..");
-        Node new_node = new Node();
+    public void insertAt(int pos, int value) {
+        int count = 0;
+        insertAt(head, pos, value, count);
+    }
+    public void insertAt(Node head, int pos, int value, int count) {
         if (pos == 0) {
             insertFront(value);
+            count++;
         } else {
-            Node temp = head;
-            for (int i = 1; i < pos; i++) {
-                temp = temp.next;
+            if (count == pos) {
+                Node new_node = new Node();
+                Node temp = head;
+                new_node.value = value;
+                new_node.next = head.next;
+                head.next = new_node;
             }
-            new_node.value = value;
-            new_node.next = temp.next;
-            temp.next = new_node;
+            count++;
+            insertAt(head.next, pos, value, count);
         }
-
     }
     /**.
      * Determines if empty.
@@ -139,8 +143,9 @@ class LinkedList {
         head = reverseRecursive(head);
     }
     private Node reverseRecursive(Node head) {
-        if(head==null || head.next == null)
+        if(head == null || head.next == null) {
             return head;
+        }
         Node temp = reverseRecursive(head.next);
         head.next.next = head;
         head.next = null;
