@@ -44,6 +44,7 @@ class LinkedList {
      *
      * @return     { description_of_the_return_value }
      */
+// time complexitty is O(1)
     public void deleteFront() {
         if (head != null) {
             head = head.next;
@@ -55,6 +56,7 @@ class LinkedList {
      *
      * @return     { description_of_the_return_value }
      */
+// time complexitty is O(1)
     public void deleteBack() {
         if (tail != null) {
             Node temp = null;
@@ -78,6 +80,7 @@ class LinkedList {
      *
      * @param      value  The value
      */
+// time complexitty is O(1)
     public void insertBack(final int value) {
         if (tail == null) {
             tail = new Node();
@@ -93,6 +96,7 @@ class LinkedList {
         }
         size++;
     }
+// time complexitty is O(1)
     /**.
      * { function_description }
      *
@@ -112,9 +116,11 @@ class LinkedList {
         }
         size++;
     }
+// time complexity is O(1)
     public void insertAt(int pos, int value) {
         insertAt(head, pos, value);
     }
+// time complexitty is O(N)
     public void insertAt(Node head, int pos, int value) {
         if (pos == 0) {
             insertFront(value);
@@ -140,9 +146,11 @@ class LinkedList {
     public boolean isEmpty() {
         return head == null;
     }
+// time complexity is O(1)
     public void reverse() {
         head = reverseRecursive(head);
     }
+// time complexity is O(N)
     private Node reverseRecursive(Node head) {
         if(head == null || head.next == null) {
             return head;
@@ -152,9 +160,11 @@ class LinkedList {
         head.next = null;
         return temp;
     }
+// time complexity is O(1)
     public int size() {
         return size;
     }
+    // time complexity is O(1)
     public String displayAll() {
         if (size != 0) {
             String str = "";
