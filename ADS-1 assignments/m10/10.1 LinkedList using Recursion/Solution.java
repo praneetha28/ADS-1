@@ -25,10 +25,12 @@ public final class Solution {
             String[] tokens = line.split(" ");
             switch (tokens[0]) {
                 case "insertAt":
-                    if (Integer.parseInt(tokens[1]) < 0 || Integer.parseInt(tokens[1]) > ll.size() + 1) {
+                    if (Integer.parseInt(tokens[1]) < 0 || Integer.parseInt(
+                        tokens[1]) > ll.size() + 1) {
                         System.out.println("Can't insert at this position.");
                     } else {
-                        ll.insertAt(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));
+                        ll.insertAt(Integer.parseInt(tokens[1]),
+                            Integer.parseInt(tokens[2]));
                         System.out.println(ll.displayAll());
                     }
                     break;
@@ -39,6 +41,8 @@ public final class Solution {
                     } else {
                         System.out.println("No elements to reverse.");
                     }
+                    break;
+                default:
                     break;
             }
         }
