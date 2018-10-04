@@ -18,7 +18,7 @@ class LinkedList {
      * { var_description }
      */
     private int size= 0;
-    private static int count = 0;
+    private static int index = 0;
     /**.
      * Class for node.
      */
@@ -120,16 +120,16 @@ class LinkedList {
             insertFront(value);
             return;
         }
-            if (count + 1 == pos) {
+            if (index + 1 == pos) {
                 Node new_node = new Node();
                 // Node temp = head;
                 new_node.value = value;
                 new_node.next = head.next;
                 head.next = new_node;
-                count = 0;
+                index = 0;
                 return;
             }
-            count++;
+            index++;
             insertAt(head.next, pos, value);
     }
     /**.
