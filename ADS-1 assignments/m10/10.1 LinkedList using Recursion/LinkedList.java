@@ -114,10 +114,6 @@ class LinkedList {
     public void insertAt(final int pos, final int value) {
         // System.out.println("..");
         Node new_node = new Node();
-        if (pos < 0 || pos > size + 1) {
-            System.out.println("Can't insert at this position.");
-            return;
-        }
         if (pos == 0) {
             insertFront(value);
         } else {
