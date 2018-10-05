@@ -10,6 +10,9 @@ class Sorting {
     }
 // time complexity for this method is O(N^2).
 // In first for loop and second loop it iterates through the size of array
+/**.
+    method for insertion sort
+    */
     public void insertion(final Comparable[] arr, final int low, final int high) {
         // int i = low;
         // int j = high;
@@ -20,6 +23,9 @@ class Sorting {
         }
     }
 // time complexity of this method is O(1). It swaps the elements only once.
+/**.
+    method for swapping
+    */
     public void swap(final Comparable[] arr, final int j, final int min) {
         Comparable temp = arr[j];
         arr[j] = arr[min];
@@ -27,6 +33,9 @@ class Sorting {
     }
 // time complexity of this method is O(N). It iterates through
 // the array to print all the objects in array.
+/**.
+    method for printing
+    */
     public String toString(final Comparable[] arr) {
         // System.out.println("in print");
         String str = "[";
@@ -37,7 +46,11 @@ class Sorting {
         return str;
     }
 // time complexity is O(log N)
-    public void sort(final Comparable[] arr, final int low, final int high, final int cutOff)
+    /**.
+    method for sort
+    */
+    public void sort(final Comparable[] arr, final int low,
+     final int high, final int cutOff)
     {
         if (high <= low + cutOff - 1) {
             insertion(arr, low, high);
@@ -50,11 +63,18 @@ class Sorting {
         sort(arr, k + 1, high, cutOff);
     }
 //time complexity is O(1)
+    /**.
+    method for sort
+    */
     public void sort(final Comparable[] array, final int cutOff) {
         sort(array, 0, array.length - 1, cutOff);
     }
 // time complexity is O(N)
-    public int partition(final Comparable[] arr, final int low, final int high) {
+    /**.
+    method for partitioning
+    */
+    public int partition(final Comparable[] arr,
+     final int low, final int high) {
         int i = low;
         int j = high + 1;
         while (true) {
@@ -78,7 +98,10 @@ class Sorting {
         return j;
     }
 // time complexity is O(1)
-    public boolean less(Comparable a, Comparable b) {
-        return a.compareTo(b)<0;
+    /**.
+    method for comparing
+    */
+    public boolean less(final Comparable a, final Comparable b) {
+        return a.compareTo(b) < 0;
     }
 }
