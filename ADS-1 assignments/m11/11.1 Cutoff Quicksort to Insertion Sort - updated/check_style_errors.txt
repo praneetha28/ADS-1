@@ -1,15 +1,12 @@
 Starting audit...
 [ERROR] F:\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Sorting.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Sorting.java:6:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Sorting.java:26:31: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Sorting.java:26:32: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Sorting.java:50: Expected @return tag. [JavadocMethod]
-[ERROR] F:\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Sorting.java:66:8: Unused @param tag for 'cutoff'. [JavadocMethod]
-[ERROR] F:\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Sorting.java:69:32: Expected @param tag for 'cutOff'. [JavadocMethod]
-[ERROR] F:\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Sorting.java:70:5: '{' at column 5 should be on the previous line. [LeftCurly]
-[ERROR] F:\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Sorting.java:85:7: Unused @param tag for 'cutoff'. [JavadocMethod]
-[ERROR] F:\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Sorting.java:87:58: Expected @param tag for 'cutOff'. [JavadocMethod]
-[ERROR] F:\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Sorting.java:97: Expected @return tag. [JavadocMethod]
-[ERROR] F:\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Sorting.java:127: Expected @return tag. [JavadocMethod]
+[ERROR] F:\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Sorting.java:69:8: Unused @param tag for 'cutoff'. [JavadocMethod]
+[ERROR] F:\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Sorting.java:72:32: Expected @param tag for 'cutOff'. [JavadocMethod]
+[ERROR] F:\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Sorting.java:73:5: '{' at column 5 should be on the previous line. [LeftCurly]
+[ERROR] F:\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Sorting.java:88:7: Unused @param tag for 'cutoff'. [JavadocMethod]
+[ERROR] F:\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Sorting.java:90:58: Expected @param tag for 'cutOff'. [JavadocMethod]
+[ERROR] F:\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Sorting.java:95: First sentence should end with a period. [JavadocStyle]
+[ERROR] F:\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Sorting.java:130: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 9 errors.

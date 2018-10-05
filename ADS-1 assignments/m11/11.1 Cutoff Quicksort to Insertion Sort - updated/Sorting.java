@@ -23,7 +23,7 @@ class Sorting {
         // int j = high;
         for (int i = low; i <= high; i++) {
             for (int j = i; j > low && less(arr[j], arr[j - 1]); j--) {
-                swap(arr, j, j-1);
+                swap(arr, j, j - 1);
             }
         }
     }
@@ -42,10 +42,13 @@ class Sorting {
     }
 // time complexity of this method is O(N). It iterates through
 // the array to print all the objects in array.
-/**.
-     * { function_description }
+
+    /**
+     * Returns a string representation of the object.
      *
-     * @param      arr  The arguments
+     * @param      arr   The arr
+     *
+     * @return     String representation of the object.
      */
     public String toString(final Comparable[] arr) {
         // System.out.println("in print");
@@ -88,12 +91,16 @@ class Sorting {
         sort(array, 0, array.length - 1, cutOff);
     }
 // time complexity is O(N)
-    /**.
-    method for partitioning
-    * @param      arr  The arguments
-    * @param      low  The arguments
-    * @param      high  The arguments
-    */
+
+    /**
+     * { function_description }
+     *
+     * @param      arr   The arr
+     * @param      low   The low
+     * @param      high  The high
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int partition(final Comparable[] arr,
      final int low, final int high) {
         int i = low;
@@ -119,11 +126,15 @@ class Sorting {
         return j;
     }
 // time complexity is O(1)
-    /**.
-    method for comparing
-    * @param      a  The arguments
-    * @param      b  The arguments
-    */
+
+    /**
+     * { function_description }
+     *
+     * @param      a     { parameter_description }
+     * @param      b     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean less(final Comparable a, final Comparable b) {
         return a.compareTo(b) < 0;
     }
