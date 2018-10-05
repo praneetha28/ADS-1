@@ -31,7 +31,7 @@ class Sorting {
 		str += arr[arr.length - 1] + "]";
 		return str;
 	}
-// time complexity is O(1)
+// time complexity is O(N)
 	public void sort(Comparable[] arr, Comparable[] aux, int low, int high)
     {
         if (high <= low + 7) {
