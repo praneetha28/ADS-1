@@ -1,6 +1,3 @@
-/**.
- * Class for sorting.
- */
 class Sorting {
     // Comparable[] arr;
     Sorting() {
