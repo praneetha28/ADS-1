@@ -1,3 +1,6 @@
+/**
+ * Class for sorting.
+ */
 class Sorting {
     // Comparable[] arr;
     Sorting() {
@@ -14,7 +17,8 @@ class Sorting {
      * @param      low  The arguments
      * @param      high  The arguments
      */
-    public void insertion(final Comparable[] arr, final int low, final int high) {
+    public void insertion(final Comparable[] arr, final int low,
+     final int high) {
         // int i = low;
         // int j = high;
         for (int i = low; i <= high; i++) {
