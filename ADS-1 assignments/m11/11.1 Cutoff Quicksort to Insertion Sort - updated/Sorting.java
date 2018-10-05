@@ -11,8 +11,12 @@ class Sorting {
 // time complexity for this method is O(N^2).
 // In first for loop and second loop it iterates through the size of array
 /**.
-    method for insertion sort
-    */
+     * { function_description }
+     *
+     * @param      arr  The arguments
+     * @param      low  The arguments
+     * @param      high  The arguments
+     */
     public void insertion(final Comparable[] arr, final int low, final int high) {
         // int i = low;
         // int j = high;
@@ -24,8 +28,12 @@ class Sorting {
     }
 // time complexity of this method is O(1). It swaps the elements only once.
 /**.
-    method for swapping
-    */
+     * { function_description }
+     *
+     * @param      arr  The arguments
+     * @param      j  The arguments
+     * @param      min  The arguments
+     */
     public void swap(final Comparable[] arr, final int j, final int min) {
         Comparable temp = arr[j];
         arr[j] = arr[min];
@@ -34,8 +42,10 @@ class Sorting {
 // time complexity of this method is O(N). It iterates through
 // the array to print all the objects in array.
 /**.
-    method for printing
-    */
+     * { function_description }
+     *
+     * @param      arr  The arguments
+     */
     public String toString(final Comparable[] arr) {
         // System.out.println("in print");
         String str = "[";
@@ -46,9 +56,14 @@ class Sorting {
         return str;
     }
 // time complexity is O(log N)
-    /**.
-    method for sort
-    */
+/**.
+     * { function_description }
+     *
+     * @param      arr  The arguments
+     * @param      low  The arguments
+     * @param      high  The arguments
+     * @param      cutoff  The arguments
+     */
     public void sort(final Comparable[] arr, final int low,
      final int high, final int cutOff)
     {
@@ -65,6 +80,8 @@ class Sorting {
 //time complexity is O(1)
     /**.
     method for sort
+    * @param      array  The arguments
+    * @param      cutoff  The arguments
     */
     public void sort(final Comparable[] array, final int cutOff) {
         sort(array, 0, array.length - 1, cutOff);
@@ -72,6 +89,9 @@ class Sorting {
 // time complexity is O(N)
     /**.
     method for partitioning
+    * @param      arr  The arguments
+    * @param      low  The arguments
+    * @param      high  The arguments
     */
     public int partition(final Comparable[] arr,
      final int low, final int high) {
@@ -100,6 +120,8 @@ class Sorting {
 // time complexity is O(1)
     /**.
     method for comparing
+    * @param      a  The arguments
+    * @param      b  The arguments
     */
     public boolean less(final Comparable a, final Comparable b) {
         return a.compareTo(b) < 0;
