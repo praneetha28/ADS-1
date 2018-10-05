@@ -2,7 +2,10 @@
  * Class for sorting.
  */
 class Sorting {
-    // Comparable[] arr;
+
+    /**
+     * Constructs the object.
+     */
     Sorting() {
         /**.
          * { item_description }
@@ -66,11 +69,10 @@ class Sorting {
      * @param      arr  The arguments
      * @param      low  The arguments
      * @param      high  The arguments
-     * @param      cutoff  The arguments
+     * @param      cutOff  The arguments
      */
     public void sort(final Comparable[] arr, final int low,
-     final int high, final int cutOff)
-    {
+     final int high, final int cutOff) {
         if (high <= low + cutOff - 1) {
             insertion(arr, low, high);
             System.out.println("insertionSort called");
@@ -82,17 +84,19 @@ class Sorting {
         sort(arr, k + 1, high, cutOff);
     }
 //time complexity is O(1)
-    /**.
-    method for sort
-    * @param      array  The arguments
-    * @param      cutoff  The arguments
-    */
+
+    /**
+     * { function_description }
+     *
+     * @param      array   The array
+     * @param      cutOff  The cut off
+     */
     public void sort(final Comparable[] array, final int cutOff) {
         sort(array, 0, array.length - 1, cutOff);
     }
 // time complexity is O(N)
 
-    /**
+    /**.
      * { function_description }
      *
      * @param      arr   The arr
@@ -127,7 +131,7 @@ class Sorting {
     }
 // time complexity is O(1)
 
-    /**
+    /**.
      * { function_description }
      *
      * @param      a     { parameter_description }
