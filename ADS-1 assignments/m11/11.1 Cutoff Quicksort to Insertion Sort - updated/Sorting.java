@@ -3,7 +3,7 @@
  */
 class Sorting {
 
-    /**
+    /**.
      * Constructs the object.
      */
     Sorting() {
@@ -46,7 +46,7 @@ class Sorting {
 // time complexity of this method is O(N). It iterates through
 // the array to print all the objects in array.
 
-    /**
+    /**.
      * Returns a string representation of the object.
      *
      * @param      arr   The arr
@@ -85,7 +85,7 @@ class Sorting {
     }
 //time complexity is O(1)
 
-    /**
+    /**.
      * { function_description }
      *
      * @param      array   The array

@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] F:\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Sorting.java:88: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 1 errors.
