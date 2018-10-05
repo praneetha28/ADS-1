@@ -25,7 +25,7 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         Sorting sort = new Sorting();
-        int testcases= Integer.parseInt(sc.nextLine());
+        int testcases = Integer.parseInt(sc.nextLine());
         for (int i = 0; i < testcases; i++) {
             int j = Integer.parseInt(sc.nextLine());
             // sc.nextLine();
