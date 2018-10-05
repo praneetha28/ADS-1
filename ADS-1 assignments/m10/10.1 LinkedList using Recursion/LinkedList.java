@@ -44,7 +44,7 @@ class LinkedList {
      *
      * @return     { description_of_the_return_value }
      */
-// time complexitty is O(1)
+// time complexity is O(1)
     public void deleteFront() {
         if (head != null) {
             head = head.next;
@@ -56,7 +56,7 @@ class LinkedList {
      *
      * @return     { description_of_the_return_value }
      */
-// time complexitty is O(1)
+// time complexity is O(N)
     public void deleteBack() {
         if (tail != null) {
             Node temp = null;
@@ -164,7 +164,7 @@ class LinkedList {
     public int size() {
         return size;
     }
-    // time complexity is O(1)
+    // time complexity is O(N)
     public String displayAll() {
         if (size != 0) {
             String str = "";

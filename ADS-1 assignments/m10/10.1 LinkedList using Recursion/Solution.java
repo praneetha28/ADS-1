@@ -12,6 +12,7 @@ public final class Solution {
     private Solution() {
 
     }
+// time complexity is O(N)
     /**.
      * { function_description }
      *
