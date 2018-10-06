@@ -1,0 +1,123 @@
+class Sorting {
+	Student[] students;
+	int size;
+
+	Sorting() {
+		students = new Student[30];
+		this.size = 0;
+	}
+	public void add(Student s) {
+		students[size++] = s;
+	}
+	public int size() {
+		return size;
+	}
+	/**.
+	 * { function_description }
+	 */
+	public void insertion() {
+		for (int i = 0;i < size; i++) {
+    		for (int j = i; j > 0 && students[j].compareTo(students[j-1]) > -1; j--) {
+             	swap(students, j, j-1);
+    		}
+		}
+	}
+// time complexity of this method is O(1). It swaps the elements only once.
+
+	/**
+	 * { function_description }
+	 *
+	 * @param      students  The students
+	 * @param      j     { parameter_description }
+	 * @param      min   The minimum
+	 */
+	public void swap(Student[] students, int j, int min) {
+		Student temp = students[min];
+	    students[min] = students[j];
+	    students[j] = temp;
+	}
+// time complexity of this method is O(N). It iterates through the array to
+// print all the objects in array.
+	/**.
+	@return     String representation of the object.
+	*/
+	public String toString() {
+		// System.out.println("in print");
+		String str = "";
+		for (int i = 0; i < size; i++) {
+			str += students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory() + "\n";
+		}
+		return str;
+	}
+	public String vacancy1(int n) {
+		String str = "";
+		for (int i = 0; i < n; i++) {
+			str += students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory() + "\n";
+		}
+		return str;
+	}
+	public String vacancy2(int n, int n1) {
+		// System.out.println("in bc");
+		String str = "";
+		String s = "BC";
+		int count = 0;
+		for (int i = n; i < size; i++) {
+			// System.out.println("in for");
+			if (count == n1) {
+				// System.out.println("in count");
+				break;
+			} else {
+				// System.out.println("in lese");
+				if (students[i].getCategory().equals(s)) {
+					// System.out.println("in if2");
+					str += students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory() + "\n";
+					count++;
+				}
+			}
+		}
+		return str;
+	}
+	public String vacancy3(int n, int n1) {
+		// System.out.println("in sc");
+		String str = "";
+		String s = "ST";
+		int count = 0;
+		for (int i = n; i < size; i++) {
+			// System.out.println("in for");
+			if (count == n1) {
+				// System.out.println("in count");
+				break;
+			} else {
+				// System.out.println("in else");
+				// System.out.println(students[i].getCategory());
+				if (students[i].getCategory().equals(s)) {
+					// System.out.println("in if2");
+					str += students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory() + "\n";
+					count++;
+				}
+			}
+		}
+		return str;
+	}
+	public String vacancy4(int n, int n1) {
+		// System.out.println("st");
+		String str = "";
+		String s = "SC";
+		int count = 0;
+		for (int i =  n; i < size; i++) {
+			// System.out.println("for");
+			if (count == n1) {
+				// System.out.println("in count");
+				break;
+			} else {
+				// System.out.println("in else");
+				if (students[i].getCategory().equals(s)) {
+					// System.out.println("in if2");
+					str += students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory() + "\n";
+					count++;
+				}
+			}
+		}
+		return str;
+	}
+}

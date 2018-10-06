@@ -1,0 +1,62 @@
+/**.
+ * { item_description }
+ */
+import java.util.Scanner;
+/**.
+ * { item_description }
+ */
+public final class Solution {
+    /**.
+     * Constructs the object.
+     */
+    private Solution() {
+        /**.
+         * { item_description }
+         */
+    }
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    // time complexity for the main method is N
+    // Because there is one while loop.
+    // while loop iterates until it has next line i.e N times.
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Sorting sort = new Sorting();
+        int n = sc.nextInt();
+        int noOfVacancies = sc.nextInt();
+        int vac1 = sc.nextInt();
+        int vac2 = sc.nextInt();
+        int vac3 = sc.nextInt();
+        int vac4 = sc.nextInt();
+        sc.nextLine();
+        for (int i = 0; i < n; i++) {
+            String line = sc.nextLine();
+            String[] tokens = line.split(",");
+            Student student = new Student(tokens[0], tokens[1],
+             Integer.parseInt(tokens[2]), Integer.parseInt(tokens[2 + 1]),
+             Integer.parseInt(tokens[2 + 2]), Integer.parseInt(tokens[2 + 2 + 1]),
+             tokens[2 + 2 + 2]);
+            // System.out.println(tokens[0]);
+            // System.out.println(Integer.parseInt(tokens[1]));
+            sort.add(student);
+            // i++;
+        }
+        // System.out.println("sort");
+        sort.insertion();
+        System.out.println(sort.toString());
+        System.out.println();
+        System.out.println(sort.vacancy1(vac1));
+        if (vac2 != 0) {
+            System.out.println(sort.vacancy2(vac1, vac2));
+            System.out.println(sort.vacancy3(vac1, vac3));
+            System.out.println(sort.vacancy4(vac1, vac4));
+        } else {
+            System.out.println(sort.vacancy3(vac1, vac3));
+            System.out.println(sort.vacancy4(vac1, vac4));
+        }
+
+    }
+}
