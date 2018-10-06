@@ -62,15 +62,23 @@ class Sorting {
 		int count = 0;
 		for (int i = n; i < size; i++) {
 			// System.out.println("in for");
-			if (count == n1) {
-				// System.out.println("in count");
+			if (n1 == 0) {
 				break;
 			} else {
-				// System.out.println("in lese");
 				if (students[i].getCategory().equals(s)) {
-					// System.out.println("in if2");
 					System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
-					count++;
+					n1--;
+				}
+			}
+		}
+		if (n1 != 0) {
+			int c = n1;
+			for (int i = n; i < size; i++) {
+				if (c == 0) {
+					break;
+				} else {
+					System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
+					c--;
 				}
 			}
 		}
@@ -78,19 +86,27 @@ class Sorting {
 	public void vacancy3(int n, int n1) {
 		// System.out.println("in sc");
 		String s = "ST";
-		int count = 0;
 		for (int i = n; i < size; i++) {
 			// System.out.println("in for");
-			if (count == n1) {
+			if (n1 == 0) {
 				// System.out.println("in count");
 				break;
 			} else {
-				// System.out.println("in else");
-				// System.out.println(students[i].getCategory());
 				if (students[i].getCategory().equals(s)) {
 					// System.out.println("in if2");
 					System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
-					count++;
+					n1--;
+				}
+			}
+		}
+		if (n1 != 0) {
+			int c = n1;
+			for (int i = n; i < size; i++) {
+				if (c == 0) {
+					break;
+				} else {
+					System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
+					c--;
 				}
 			}
 		}
@@ -101,15 +117,24 @@ class Sorting {
 		int count = 0;
 		for (int i =  n; i < size; i++) {
 			// System.out.println("for");
-			if (count == n1) {
+			if (n1 == 0) {
 				// System.out.println("in count");
 				break;
 			} else {
-				// System.out.println("in else");
 				if (students[i].getCategory().equals(s)) {
-					// System.out.println("in if2");
 					System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
-					count++;
+					n1--;
+				}
+			}
+		}
+		if (n1 != 0) {
+			int c = n1;
+			for (int i = n; i < size; i++) {
+				if (c == 0) {
+					break;
+				} else {
+					System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
+					c--;
 				}
 			}
 		}

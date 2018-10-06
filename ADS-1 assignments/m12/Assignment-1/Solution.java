@@ -49,8 +49,8 @@ public final class Solution {
             sort.vacancy4(vac1, vac4);
         } else {
             sort.vacancy2(vac1, vac2);
-            sort.vacancy3(vac1, vac3);
-            sort.vacancy4(vac1, vac4);
+            sort.vacancy3(vac1 + vac2, vac3);
+            sort.vacancy4(vac1 + vac2 + vac3, vac4);
         }
 
     }
