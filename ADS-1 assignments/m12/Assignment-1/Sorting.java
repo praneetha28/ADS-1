@@ -1,20 +1,42 @@
+/**.
+ * Class for sorting.
+ */
 class Sorting {
+	/**.
+	 * { var_description }
+	 */
 	Student[] students;
+	/**.
+	 * { var_description }
+	 */
 	int size;
-
+	/**.
+	 * Constructs the object.
+	 */
 	Sorting() {
 		students = new Student[30];
 		this.size = 0;
 	}
+	/**.
+	 * { function_description }
+	 *
+	 * @param      s     { parameter_description }
+	 */
 	public void add(Student s) {
 		students[size++] = s;
 	}
+	/**.
+	 * { function_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int size() {
 		return size;
 	}
 	/**.
 	 * { function_description }
 	 */
+	// time complexity of this method is O(N^2). It access the array elements twice
 	public void insertion() {
 		for (int i = 0;i < size; i++) {
     		for (int j = i; j > 0 && students[j].compareTo(students[j-1]) > -1; j--) {
@@ -23,8 +45,7 @@ class Sorting {
 		}
 	}
 // time complexity of this method is O(1). It swaps the elements only once.
-
-	/**
+	/**.
 	 * { function_description }
 	 *
 	 * @param      students  The students
@@ -49,12 +70,27 @@ class Sorting {
 		}
 		return str;
 	}
+	/**.
+	 * { function_description }
+	 *
+	 * @param      n     { parameter_description }
+	 */
+	// time complexity of this method is O(N). It iterates through the array to
+// print all the objects in array.
 	public void vacancy1(int n) {
 		String str = "";
 		for (int i = 0; i < n; i++) {
 			System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
 		}
 	}
+	/**.
+	 * { function_description }
+	 *
+	 * @param      n     { parameter_description }
+	 * @param      n1    The n 1
+	 */
+	// time complexity of this method is O(N). It iterates through the array to
+// print all the objects in array.
 	public void vacancy2(int n, int n1) {
 		// System.out.println("in bc");
 		String str = "";
@@ -83,6 +119,14 @@ class Sorting {
 			}
 		}
 	}
+	/**.
+	 * { function_description }
+	 *
+	 * @param      n     { parameter_description }
+	 * @param      n1    The n 1
+	 */
+	// time complexity of this method is O(N). It iterates through the array to
+// print all the objects in array.
 	public void vacancy3(int n, int n1) {
 		// System.out.println("in sc");
 		String s = "ST";
@@ -111,6 +155,14 @@ class Sorting {
 			}
 		}
 	}
+	/**.
+	 * { function_description }
+	 *
+	 * @param      n     { parameter_description }
+	 * @param      n1    The n 1
+	 */
+	// time complexity of this method is O(N). It iterates through the array to
+// print all the objects in array.
 	public void vacancy4(int n, int n1) {
 		// System.out.println("st");
 		String s = "SC";
