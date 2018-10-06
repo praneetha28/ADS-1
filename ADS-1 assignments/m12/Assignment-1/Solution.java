@@ -14,14 +14,14 @@ public final class Solution {
          * { item_description }
          */
     }
+    // time complexity for the main method is N
+    // Because there is one for loop.
+    // for loop iterates until N times.
     /**.
      * { function_description }
      *
      * @param      args  The arguments
      */
-    // time complexity for the main method is N
-    // Because there is one for loop.
-    // for loop iterates until N times.
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         Sorting sort = new Sorting();
