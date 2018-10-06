@@ -49,14 +49,13 @@ class Sorting {
 		}
 		return str;
 	}
-	public String vacancy1(int n) {
+	public void vacancy1(int n) {
 		String str = "";
 		for (int i = 0; i < n; i++) {
-			str += students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory() + "\n";
+			System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
 		}
-		return str;
 	}
-	public String vacancy2(int n, int n1) {
+	public void vacancy2(int n, int n1) {
 		// System.out.println("in bc");
 		String str = "";
 		String s = "BC";
@@ -70,16 +69,14 @@ class Sorting {
 				// System.out.println("in lese");
 				if (students[i].getCategory().equals(s)) {
 					// System.out.println("in if2");
-					str += students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory() + "\n";
+					System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
 					count++;
 				}
 			}
 		}
-		return str;
 	}
-	public String vacancy3(int n, int n1) {
+	public void vacancy3(int n, int n1) {
 		// System.out.println("in sc");
-		String str = "";
 		String s = "ST";
 		int count = 0;
 		for (int i = n; i < size; i++) {
@@ -92,16 +89,14 @@ class Sorting {
 				// System.out.println(students[i].getCategory());
 				if (students[i].getCategory().equals(s)) {
 					// System.out.println("in if2");
-					str += students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory() + "\n";
+					System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
 					count++;
 				}
 			}
 		}
-		return str;
 	}
-	public String vacancy4(int n, int n1) {
+	public void vacancy4(int n, int n1) {
 		// System.out.println("st");
-		String str = "";
 		String s = "SC";
 		int count = 0;
 		for (int i =  n; i < size; i++) {
@@ -113,11 +108,10 @@ class Sorting {
 				// System.out.println("in else");
 				if (students[i].getCategory().equals(s)) {
 					// System.out.println("in if2");
-					str += students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory() + "\n";
+					System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
 					count++;
 				}
 			}
 		}
-		return str;
 	}
 }

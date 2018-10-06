@@ -39,23 +39,18 @@ public final class Solution {
              Integer.parseInt(tokens[2]), Integer.parseInt(tokens[2 + 1]),
              Integer.parseInt(tokens[2 + 2]), Integer.parseInt(tokens[2 + 2 + 1]),
              tokens[2 + 2 + 2]);
-            // System.out.println(tokens[0]);
-            // System.out.println(Integer.parseInt(tokens[1]));
             sort.add(student);
-            // i++;
         }
-        // System.out.println("sort");
         sort.insertion();
         System.out.println(sort.toString());
-        System.out.println();
-        System.out.println(sort.vacancy1(vac1));
-        if (vac2 != 0) {
-            System.out.println(sort.vacancy2(vac1, vac2));
-            System.out.println(sort.vacancy3(vac1, vac3));
-            System.out.println(sort.vacancy4(vac1, vac4));
+        sort.vacancy1(vac1);
+        if (vac2 == 0) {
+            sort.vacancy3(vac1, vac3);
+            sort.vacancy4(vac1, vac4);
         } else {
-            System.out.println(sort.vacancy3(vac1, vac3));
-            System.out.println(sort.vacancy4(vac1, vac4));
+            sort.vacancy2(vac1, vac2);
+            sort.vacancy3(vac1, vac3);
+            sort.vacancy4(vac1, vac4);
         }
 
     }
