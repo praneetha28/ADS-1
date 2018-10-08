@@ -3,24 +3,19 @@
  */
 import java.util.Arrays;
 class PriorityQueue<E extends Comparable<E>> {
-	E[] arr;
+	private E[] arr;
     int size;
-	PriorityQueue() {
-        arr = ((E[])new Object[10]);
+	PriorityQueue(final E[] array) {
+        this.arr = array;
         size = 0;
 	}
 // time complexity for this method is O(N^2).
 // In first for loop and second loop it iterates through the size of array
-	public boolean insert(E[] arr) {
-		for (int i = 0; i < arr.length; i++) {
-            add(arr[i]);
-        }
-        if (isMinHeap(1)) {
-            return true;
-        } else {
-            return false;
-        }
-	}
+	// public boolean insert(E[] arr) {
+	// 	for (int i = 0; i < arr.length; i++) {
+ //            add(arr[i]);
+ //        }
+	// }
     public void add(E k) {
         if (size == arr.length - 1) {
             resize();
@@ -34,24 +29,17 @@ class PriorityQueue<E extends Comparable<E>> {
         if (k > size) {
             return true;
         }
-        if (2 * k <= size && greater(k, 2 * k)) {
+        int left = 2 * k;
+        int right = 2 * k + 1;
+        if (left <= size && greater(k, left)) {
             return false;
         }
-        if (2 * k + 1<= size && greater(k, 2 * k + 1)) {
+        if (right <= size && greater(k, right)) {
             return false;
         }
-        return isMinHeap(2 * k) && isMinHeap(2 * k + 1);
+        return isMinHeap(left) && isMinHeap(right);
     }
     public boolean greater(int a, int b) {
         return arr[a].compareTo(arr[b]) > 0;
-    }
-    public int compareTo(E that) {
-        if (this.compareTo(that) > 0) {
-            return 1;
-        } else if (this.compareTo(that) < 0) {
-            return -1;
-        } else {
-            return 0;
-        }
     }
 }

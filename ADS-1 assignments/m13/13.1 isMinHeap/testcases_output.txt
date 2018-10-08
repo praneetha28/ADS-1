@@ -5,9 +5,10 @@ false
 true
 false
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
-	at PriorityQueue.<init>(PriorityQueue.java:9)
-	at Solution.main(Solution.java:27)
+true
+true
+true
+true
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -18,9 +19,12 @@ false
 false
 false
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
-	at PriorityQueue.<init>(PriorityQueue.java:9)
-	at Solution.main(Solution.java:27)
+true
+true
+true
+true
+true
+true
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -33,9 +37,14 @@ false
 true
 false
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
-	at PriorityQueue.<init>(PriorityQueue.java:9)
-	at Solution.main(Solution.java:27)
+true
+true
+true
+true
+true
+true
+true
+true
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -43,9 +52,9 @@ true
 false
 false
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
-	at PriorityQueue.<init>(PriorityQueue.java:9)
-	at Solution.main(Solution.java:27)
+true
+true
+true
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -53,7 +62,11 @@ true
 true
 false
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
-	at PriorityQueue.<init>(PriorityQueue.java:9)
-	at Solution.main(Solution.java:27)
+true
+true
+Exception in thread "main" java.lang.NumberFormatException: empty String
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+	at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+	at java.base/java.lang.Float.parseFloat(Float.java:455)
+	at Solution.main(Solution.java:65)
 ----------------------------------------

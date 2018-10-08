@@ -1,2 +1,8 @@
 Starting audit...
+[ERROR] F:\ADS-1\ADS-1 assignments\m13\13.1 isMinHeap\Solution.java:30:15: 'switch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\ADS-1\ADS-1 assignments\m13\13.1 isMinHeap\Solution.java:35: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] F:\ADS-1\ADS-1 assignments\m13\13.1 isMinHeap\Solution.java:51: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] F:\ADS-1\ADS-1 assignments\m13\13.1 isMinHeap\Solution.java:67: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] F:\ADS-1\ADS-1 assignments\m13\13.1 isMinHeap\Solution.java:83: Line is longer than 80 characters (found 84). [LineLength]
 Audit done.
+Checkstyle ends with 5 errors.
