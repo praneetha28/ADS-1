@@ -40,6 +40,6 @@ class PriorityQueue<E extends Comparable<E>> {
         return isMinHeap(left) && isMinHeap(right);
     }
     public boolean greater(int a, int b) {
-        return arr[a].compareTo(arr[b]) > 0;
+        return arr[a].compareTo(arr[b]) < 0;
     }
 }
