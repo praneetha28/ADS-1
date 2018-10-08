@@ -27,12 +27,13 @@ public final class Solution {
         String type = sc.nextLine();
         int testcases = sc.nextInt();
         sc.nextLine();
-        switch(type) {
+        switch (type) {
             case"String":
                 for (int i = 0; i < testcases; i++) {
                     String line = sc.nextLine();
                     String[] tokens = line.split(",");
-                    PriorityQueue<String> pq = new PriorityQueue<String>(tokens);
+                    PriorityQueue<String> pq =
+                     new PriorityQueue<String>(tokens);
                     if (tokens[0].equals("")) {
                         System.out.println("false");
                     } else {
@@ -51,7 +52,8 @@ public final class Solution {
                         for (int j = 0; j < tokens.length; j++) {
                             intArray[j] = Integer.parseInt(tokens[j]);
                         }
-                        PriorityQueue<Integer> pq = new PriorityQueue<Integer>(intArray);
+                        PriorityQueue<Integer> pq =
+                         new PriorityQueue<Integer>(intArray);
                         System.out.println(pq.isMinHeap());
                     }
                 }
@@ -67,7 +69,8 @@ public final class Solution {
                         for (int j = 0; j < tokens.length; j++) {
                             fltArray[j] = Float.parseFloat(tokens[j]);
                         }
-                        PriorityQueue<Float> pq = new PriorityQueue<Float>(fltArray);
+                        PriorityQueue<Float> pq =
+                         new PriorityQueue<Float>(fltArray);
                         System.out.println(pq.isMinHeap());
                     }
                 }
@@ -76,14 +79,16 @@ public final class Solution {
                 for (int i = 0; i < testcases; i++) {
                     String line = sc.nextLine();
                     String[] tokens = line.split(",");
-                    Double[] dbleArray = new Double[tokens.length];
+                    Double[] dbleArray =
+                    new Double[tokens.length];
                     if (tokens[0].equals("")) {
                         System.out.println("false");
                     } else {
                         for (int j = 0; j < tokens.length; j++) {
                             dbleArray[j] = Double.parseDouble(tokens[j]);
                         }
-                        PriorityQueue<Double> pq = new PriorityQueue<Double>(dbleArray);
+                        PriorityQueue<Double> pq =
+                        new PriorityQueue<Double>(dbleArray);
                         System.out.println(pq.isMinHeap());
                     }
                 }
