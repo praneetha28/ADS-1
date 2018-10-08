@@ -6,8 +6,6 @@ true
 false
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at java.base/java.lang.String.compareTo(String.java:1195)
-	at java.base/java.lang.String.compareTo(String.java:124)
 	at PriorityQueue.greater(PriorityQueue.java:46)
 	at PriorityQueue.isMinHeap(PriorityQueue.java:37)
 	at PriorityQueue.insert(PriorityQueue.java:18)
@@ -23,8 +21,6 @@ false
 false
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at java.base/java.lang.String.compareTo(String.java:1195)
-	at java.base/java.lang.String.compareTo(String.java:124)
 	at PriorityQueue.greater(PriorityQueue.java:46)
 	at PriorityQueue.isMinHeap(PriorityQueue.java:37)
 	at PriorityQueue.insert(PriorityQueue.java:18)
@@ -42,8 +38,6 @@ true
 false
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at java.base/java.lang.String.compareTo(String.java:1195)
-	at java.base/java.lang.String.compareTo(String.java:124)
 	at PriorityQueue.greater(PriorityQueue.java:46)
 	at PriorityQueue.isMinHeap(PriorityQueue.java:37)
 	at PriorityQueue.insert(PriorityQueue.java:18)
@@ -56,8 +50,6 @@ false
 false
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at java.base/java.lang.String.compareTo(String.java:1195)
-	at java.base/java.lang.String.compareTo(String.java:124)
 	at PriorityQueue.greater(PriorityQueue.java:46)
 	at PriorityQueue.isMinHeap(PriorityQueue.java:37)
 	at PriorityQueue.insert(PriorityQueue.java:18)
@@ -70,8 +62,6 @@ true
 false
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at java.base/java.lang.String.compareTo(String.java:1195)
-	at java.base/java.lang.String.compareTo(String.java:124)
 	at PriorityQueue.greater(PriorityQueue.java:46)
 	at PriorityQueue.isMinHeap(PriorityQueue.java:37)
 	at PriorityQueue.insert(PriorityQueue.java:18)

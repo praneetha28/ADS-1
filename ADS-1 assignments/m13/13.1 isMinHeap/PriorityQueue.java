@@ -34,10 +34,10 @@ class PriorityQueue {
         if (k > size) {
             return true;
         }
-        if (2 * k <= size && greater(2 * k, k - 1)) {
+        if (2 * k <= size && greater(k - 1, 2 * k)) {
             return false;
         }
-        if (2 * k + 1<= size && greater(2 * k + 1, k - 1)) {
+        if (2 * k + 1<= size && greater(k - 1, 2 * k + 1)) {
             return false;
         }
         return isMinHeap(2 * k) && isMinHeap(2 * k + 1);
