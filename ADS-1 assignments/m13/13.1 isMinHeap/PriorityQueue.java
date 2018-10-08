@@ -34,15 +34,15 @@ class PriorityQueue {
         if (k > size) {
             return true;
         }
-        if (2 * k <= size && less(2 * k, k - 1)) {
+        if (2 * k <= size && greater(2 * k, k - 1)) {
             return false;
         }
-        if (2 * k <= size && less(2 * k + 1, k - 1)) {
+        if (2 * k + 1<= size && greater(2 * k + 1, k - 1)) {
             return false;
         }
-        return isMinHeap(2 * k) && isMinHeap(2 * k);
+        return isMinHeap(2 * k) && isMinHeap(2 * k + 1);
     }
-    public boolean less(int a, int b) {
-        return arr[a].compareTo(arr[b]) < 0;
+    public boolean greater(int a, int b) {
+        return arr[a].compareTo(arr[b]) > 0;
     }
 }
