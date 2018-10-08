@@ -25,7 +25,7 @@ class PriorityQueue {
         if (size == arr.length - 1) {
             resize();
         }
-        arr[size++] = k;
+        arr[++size] = k;
     }
     public void resize() {
         arr = Arrays.copyOf(arr, arr.length * 2);
@@ -43,6 +43,6 @@ class PriorityQueue {
         return isMinHeap(2 * k) && isMinHeap(2 * k + 1);
     }
     public boolean greater(int a, int b) {
-        return arr[a].compareTo(arr[b]) > 0;
+        return arr[a].compareTo(arr[b]) < 0;
     }
 }
