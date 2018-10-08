@@ -28,10 +28,10 @@ class PriorityQueue<E extends Comparable<E>> {
     public boolean isMinHeap() {
         for (int i = 1; i < arr.length; i++) {
             if (less((i - 2) / 2, i)) {
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
         // if (k > size) {
         //     return true;
         // }
