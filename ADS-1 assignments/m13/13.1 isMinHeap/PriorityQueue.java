@@ -25,19 +25,25 @@ class PriorityQueue<E extends Comparable<E>> {
     public void resize() {
         arr = Arrays.copyOf(arr, arr.length * 2);
     }
-    public boolean isMinHeap(int k) {
-        if (k > size) {
-            return true;
+    public boolean isMinHeap() {
+        for (int i = 1; i < arr.length; i++) {
+            if (less((i - 2) / 2, i)) {
+                return false;
+            }
         }
-        int left = 2 * k;
-        int right = 2 * k + 1;
-        if (left <= size && less(left, k)) {
-            return false;
-        }
-        if (right <= size && less(right, k)) {
-            return false;
-        }
-        return isMinHeap(left) && isMinHeap(right);
+        return true;
+        // if (k > size) {
+        //     return true;
+        // }
+        // int left = 2 * k;
+        // int right = 2 * k + 1;
+        // if (left <= size && less(left, k)) {
+        //     return false;
+        // }
+        // if (right <= size && less(right, k)) {
+        //     return false;
+        // }
+        // return isMinHeap(left) && isMinHeap(right);
     }
     public boolean less(int a, int b) {
         return arr[a].compareTo(arr[b]) < 0;

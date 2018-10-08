@@ -36,7 +36,7 @@ public final class Solution {
                     if (tokens[0].equals("")) {
                         System.out.println("false");
                     } else {
-                        System.out.println(pq.isMinHeap(1));
+                        System.out.println(pq.isMinHeap());
                     }
                 }
                 break;
@@ -52,7 +52,7 @@ public final class Solution {
                             intArray[j] = Integer.parseInt(tokens[j]);
                         }
                         PriorityQueue<Integer> pq = new PriorityQueue<Integer>(intArray);
-                        System.out.println(pq.isMinHeap(1));
+                        System.out.println(pq.isMinHeap());
                     }
                 }
                 break;
@@ -68,7 +68,7 @@ public final class Solution {
                             fltArray[j] = Float.parseFloat(tokens[j]);
                         }
                         PriorityQueue<Float> pq = new PriorityQueue<Float>(fltArray);
-                        System.out.println(pq.isMinHeap(1));
+                        System.out.println(pq.isMinHeap());
                     }
                 }
                 break;
@@ -84,7 +84,7 @@ public final class Solution {
                             dbleArray[j] = Double.parseDouble(tokens[j]);
                         }
                         PriorityQueue<Double> pq = new PriorityQueue<Double>(dbleArray);
-                        System.out.println(pq.isMinHeap(1));
+                        System.out.println(pq.isMinHeap());
                     }
                 }
                 break;
