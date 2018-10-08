@@ -1,0 +1,68 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+true
+false
+true
+false
+Your Output: 
+true
+false
+false
+false
+----------------------------------------
+########## Testcase 1: Passed ##########
+Expected Output: 
+false
+false
+false
+false
+false
+false
+Your Output: 
+false
+false
+false
+false
+false
+false
+----------------------------------------
+########## Testcase 2: Failed ##########
+Expected Output: 
+true
+true
+true
+false
+false
+false
+true
+false
+Your Output: 
+true
+false
+false
+false
+false
+false
+false
+false
+----------------------------------------
+########## Testcase 3: Passed ##########
+Expected Output: 
+true
+false
+false
+Your Output: 
+true
+false
+false
+----------------------------------------
+########## Testcase 4: Failed ##########
+Expected Output: 
+true
+true
+false
+Your Output: 
+false
+false
+false
+----------------------------------------
