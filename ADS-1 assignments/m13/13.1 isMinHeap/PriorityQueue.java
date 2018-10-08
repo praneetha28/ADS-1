@@ -9,13 +9,7 @@ class PriorityQueue<E extends Comparable<E>> {
         this.arr = array;
         size = 0;
 	}
-// time complexity for this method is O(N^2).
-// In first for loop and second loop it iterates through the size of array
-	// public boolean insert(E[] arr) {
-	// 	for (int i = 0; i < arr.length; i++) {
- //            add(arr[i]);
- //        }
-	// }
+// time complexity for this method is O(log N).
     public boolean isMinHeap() {
         for (int i = 1; i < arr.length; i++) {
             if (2 * i < arr.length && less(2 * i, i)) {
@@ -39,6 +33,7 @@ class PriorityQueue<E extends Comparable<E>> {
         // }
         // return isMinHeap(left) && isMinHeap(right);
     }
+// time complexity for this method is O(1).
     public boolean less(int a, int b) {
         return arr[a].compareTo(arr[b]) < 0;
     }
