@@ -16,18 +16,12 @@ class PriorityQueue<E extends Comparable<E>> {
  //            add(arr[i]);
  //        }
 	// }
-    public void add(E k) {
-        if (size == arr.length - 1) {
-            resize();
-        }
-        arr[++size] = k;
-    }
-    public void resize() {
-        arr = Arrays.copyOf(arr, arr.length * 2);
-    }
     public boolean isMinHeap() {
         for (int i = 1; i < arr.length; i++) {
-            if (less((i - 2) / 2, i)) {
+            if (2 * i < arr.length && less(2 * i, i)) {
+                return true;
+            }
+            if ((2 * i) + 1 < arr.length && less(2 * i + 1, i)) {
                 return true;
             }
         }
