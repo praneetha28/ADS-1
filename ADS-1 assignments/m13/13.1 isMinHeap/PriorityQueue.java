@@ -2,16 +2,16 @@
  * { item_description }
  */
 import java.util.Arrays;
-class PriorityQueue {
-	Comparable[] arr;
+class PriorityQueue<E extends Comparable<E>> {
+	E[] arr;
     int size;
 	PriorityQueue() {
-        arr = new Comparable[10];
+        arr = ((E[])new Object[10]);
         size = 0;
 	}
 // time complexity for this method is O(N^2).
 // In first for loop and second loop it iterates through the size of array
-	public boolean insert(Comparable[] arr) {
+	public boolean insert(E[] arr) {
 		for (int i = 0; i < arr.length; i++) {
             add(arr[i]);
         }
@@ -21,7 +21,7 @@ class PriorityQueue {
             return false;
         }
 	}
-    public void add(Comparable k) {
+    public void add(E k) {
         if (size == arr.length - 1) {
             resize();
         }
@@ -44,5 +44,14 @@ class PriorityQueue {
     }
     public boolean greater(int a, int b) {
         return arr[a].compareTo(arr[b]) > 0;
+    }
+    public int compareTo(E that) {
+        if (this.compareTo(that) > 0) {
+            return 1;
+        } else if (this.compareTo(that) < 0) {
+            return -1;
+        } else {
+            return 0;
+        }
     }
 }

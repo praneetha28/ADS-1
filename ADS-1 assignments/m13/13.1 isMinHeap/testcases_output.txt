@@ -5,12 +5,11 @@ false
 true
 false
 Your Output: 
-true
-false
-false
-false
+Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
+	at PriorityQueue.<init>(PriorityQueue.java:9)
+	at Solution.main(Solution.java:27)
 ----------------------------------------
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 false
 false
@@ -19,12 +18,9 @@ false
 false
 false
 Your Output: 
-false
-false
-false
-false
-false
-false
+Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
+	at PriorityQueue.<init>(PriorityQueue.java:9)
+	at Solution.main(Solution.java:27)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -37,24 +33,19 @@ false
 true
 false
 Your Output: 
-true
-false
-false
-false
-false
-false
-false
-false
+Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
+	at PriorityQueue.<init>(PriorityQueue.java:9)
+	at Solution.main(Solution.java:27)
 ----------------------------------------
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 true
 false
 false
 Your Output: 
-true
-false
-false
+Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
+	at PriorityQueue.<init>(PriorityQueue.java:9)
+	at Solution.main(Solution.java:27)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -62,7 +53,7 @@ true
 true
 false
 Your Output: 
-false
-false
-false
+Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
+	at PriorityQueue.<init>(PriorityQueue.java:9)
+	at Solution.main(Solution.java:27)
 ----------------------------------------
