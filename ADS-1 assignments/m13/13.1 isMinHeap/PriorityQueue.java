@@ -31,15 +31,15 @@ class PriorityQueue<E extends Comparable<E>> {
         }
         int left = 2 * k;
         int right = 2 * k + 1;
-        if (left <= size && greater(k, left)) {
+        if (left <= size && less(left, k)) {
             return false;
         }
-        if (right <= size && greater(k, right)) {
+        if (right <= size && less(right, k)) {
             return false;
         }
         return isMinHeap(left) && isMinHeap(right);
     }
-    public boolean greater(int a, int b) {
+    public boolean less(int a, int b) {
         return arr[a].compareTo(arr[b]) < 0;
     }
 }
