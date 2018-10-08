@@ -5,10 +5,15 @@ false
 true
 false
 Your Output: 
-true
-false
-false
-false
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.lang.String.compareTo(String.java:1195)
+	at java.base/java.lang.String.compareTo(String.java:124)
+	at PriorityQueue.greater(PriorityQueue.java:46)
+	at PriorityQueue.isMinHeap(PriorityQueue.java:37)
+	at PriorityQueue.isMinHeap(PriorityQueue.java:43)
+	at PriorityQueue.isMinHeap(PriorityQueue.java:43)
+	at PriorityQueue.insert(PriorityQueue.java:18)
+	at Solution.main(Solution.java:37)
 ----------------------------------------
 ########## Testcase 1: Passed ##########
 Expected Output: 
@@ -37,24 +42,36 @@ false
 true
 false
 Your Output: 
-true
-false
-false
-false
-false
-false
-false
-false
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.lang.String.compareTo(String.java:1195)
+	at java.base/java.lang.String.compareTo(String.java:124)
+	at PriorityQueue.greater(PriorityQueue.java:46)
+	at PriorityQueue.isMinHeap(PriorityQueue.java:40)
+	at PriorityQueue.isMinHeap(PriorityQueue.java:43)
+	at PriorityQueue.isMinHeap(PriorityQueue.java:43)
+	at PriorityQueue.insert(PriorityQueue.java:18)
+	at Solution.main(Solution.java:37)
 ----------------------------------------
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 true
 false
 false
 Your Output: 
-true
-false
-false
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.lang.String.compareTo(String.java:1195)
+	at java.base/java.lang.String.compareTo(String.java:124)
+	at PriorityQueue.greater(PriorityQueue.java:46)
+	at PriorityQueue.isMinHeap(PriorityQueue.java:37)
+	at PriorityQueue.isMinHeap(PriorityQueue.java:43)
+	at PriorityQueue.isMinHeap(PriorityQueue.java:43)
+	at PriorityQueue.isMinHeap(PriorityQueue.java:43)
+	at PriorityQueue.isMinHeap(PriorityQueue.java:43)
+	at PriorityQueue.isMinHeap(PriorityQueue.java:43)
+	at PriorityQueue.isMinHeap(PriorityQueue.java:43)
+	at PriorityQueue.isMinHeap(PriorityQueue.java:43)
+	at PriorityQueue.insert(PriorityQueue.java:18)
+	at Solution.main(Solution.java:37)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -62,7 +79,11 @@ true
 true
 false
 Your Output: 
-false
-false
-false
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.lang.String.compareTo(String.java:1195)
+	at java.base/java.lang.String.compareTo(String.java:124)
+	at PriorityQueue.greater(PriorityQueue.java:46)
+	at PriorityQueue.isMinHeap(PriorityQueue.java:37)
+	at PriorityQueue.insert(PriorityQueue.java:18)
+	at Solution.main(Solution.java:37)
 ----------------------------------------

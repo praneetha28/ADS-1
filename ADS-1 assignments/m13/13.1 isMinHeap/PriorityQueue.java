@@ -25,7 +25,7 @@ class PriorityQueue {
         if (size == arr.length - 1) {
             resize();
         }
-        arr[++size] = k;
+        arr[size++] = k;
     }
     public void resize() {
         arr = Arrays.copyOf(arr, arr.length * 2);
