@@ -31,33 +31,17 @@ class PriorityQueue {
         arr = Arrays.copyOf(arr, arr.length * 2);
     }
     public boolean isMinHeap(int k) {
-        int left = (2 * k) + 1;
-        int right = (2 * k) + 2;
-        if (left > size - 1) {
+        if (k > size) {
             return true;
         }
-        if (arr[right] == null || arr[left].compareTo(arr[right]) <= 0) {
-            if (arr[left].compareTo(arr[k]) > 0) {
-                isMinHeap(left);
-                return true;
-
-            }
-        } else if(arr[right].compareTo(arr[k]) > 0){
-           isMinHeap(right);
-           return true;
+        if (2 * k <= size && less(2 * k + 1, k - 1)) {
+            return false;
         }
-        return false;
+        if (2 * k <= size && less(2 * k + 2, k - 1)) {
+            return false;
+        }
+        return isMinHeap(2 * k) && isMinHeap(2 * k);
     }
-        // if (k > size) {
-        //     return true;
-        // }
-        // if (2 * k  + 1 <= size && less(2 * k + 1, k)) {
-        //     return false;
-        // }
-        // if (2 * k + 2 <= size && less(2 * k + 2, k)) {
-        //     return false;
-        // }
-        // return isMinHeap(2 * k + 1) && isMinHeap(2 * k + 2);
     public boolean less(int a, int b) {
         return arr[a].compareTo(arr[b]) < 0;
     }
