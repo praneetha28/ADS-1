@@ -15,7 +15,7 @@ class PriorityQueue {
 		for (int i = 0; i < arr.length; i++) {
             add(arr[i]);
         }
-        if (isMinHeap(0)) {
+        if (isMinHeap(1)) {
             return true;
         } else {
             return false;
