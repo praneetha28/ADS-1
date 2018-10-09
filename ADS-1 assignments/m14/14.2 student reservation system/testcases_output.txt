@@ -210,9 +210,9 @@ Abhishek,60,BC
 divya,99,Open
 tanvi,90,ST
 Aditya,80,Open
+priya,76,SC
 Tanya,66,BC
 Ajay,76,Open
-priya,76,SC
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -394,11 +394,11 @@ tanvi,90,BC
 Raj,87,BC
 mahesh,87,BC
 riya,83,Open
+Aditya,80,ST
+priya,72,SC
 varsha,66,BC
 Ajay,76,Open
 Amit,76,Open
 Arjun,75,Open
 rahul,73,Open
-Aditya,80,ST
-priya,72,SC
 ----------------------------------------
