@@ -1,6 +1,2 @@
 Starting audit...
-[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.2 student reservation system\Student.java:69:51: '+' should be on a new line. [OperatorWrap]
-[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.2 student reservation system\Student.java:70:42: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.2 student reservation system\Student.java:119:61: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 3 errors.
