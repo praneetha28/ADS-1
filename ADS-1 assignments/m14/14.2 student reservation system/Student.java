@@ -66,8 +66,8 @@ class Student {
      */
     public String getDate() {
         String revdate = "";
-        revdate = date.substring(2 + 2 + 2) + "-" + date.substring(2 + 1, 2 + 2 + 1)
-         + "-" + date.substring(0, 2);
+        revdate = date.substring(2 + 2 + 2) + "-" +
+         date.substring(2 + 1, 2 + 2 + 1)+ "-" + date.substring(0, 2);
         return revdate;
     }
     /**.
