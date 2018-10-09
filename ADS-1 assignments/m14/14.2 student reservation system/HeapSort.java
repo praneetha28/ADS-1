@@ -104,114 +104,105 @@ class HeapSort {
 	 */
 	// time complexity of this method is O(N). It iterates through the array to
 // print all the objects in array.
-	public void vacancy2(int s, int n, int n1, int n2, int n3) {
-		int[] reserved = new int[n1 + n2+ n3];
-		int k = 0;
-		for (int i = n; i < s; i++) {
-			if (students[i].getCategory().equals("BC") && n1 > 0) {
-				reserved[k++] = i;
-				n1--;
-			} else if (students[i].getCategory().equals("SC") && n2 > 0) {
-				reserved[k++] = i;
-				n2--;
-			} else if (students[i].getCategory().equals("ST") && n3 > 0) {
-				reserved[k++] = i;
-				n3--;
+	public void vacancy2(int n, int n1) {
+		// System.out.println("in bc");
+		String str = "";
+		String s = "BC";
+		int count = 0;
+		for (int i = n; i < size; i++) {
+			// System.out.println("in for");
+			if (n1 == 0) {
+				break;
+			} else {
+				if (students[i].getCategory().equals(s)) {
+					System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
+					n1--;
+				}
 			}
 		}
 		if (n1 != 0) {
-			for (int i = n; i < s; i++) {
-					if (students[i].getCategory().equals("Open") && n1 > 0) {
-						reserved[k++] = i;
-						n1--;
-					}
+			int c = n1;
+			for (int i = n; i < size; i++) {
+				if (c == 0) {
+					break;
+				} else {
+					System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
+					c--;
+				}
 			}
-		}
-		if (n2 != 0) {
-			for (int i = n; i < s; i++) {
-					if (students[i].getCategory().equals("Open") && n2 > 0) {
-						reserved[k++] = i;
-						n2--;
-					}
-			}
-		}
-		if (n3 != 0) {
-			for (int i = n; i < s; i++) {
-					if (students[i].getCategory().equals("Open") && n3 > 0) {
-						reserved[k++] = i;
-						n3--;
-					}
-			}
-		}
-		for (int j = 0; j < reserved.length; j++) {
-			System.out.println(students[j].getName() + "," + students[j].getTotal() + "," + students[j].getCategory());
 		}
 	}
-// 	/**.
-// 	 * { function_description }
-// 	 *
-// 	 * @param      n     { parameter_description }
-// 	 * @param      n1    The n 1
-// 	 */
-// 	// time complexity of this method is O(N). It iterates through the array to
-// // print all the objects in array.
-// 	public void vacancy3(int n, int n1) {
-// 		// System.out.println("in sc");
-// 		String s = "ST";
-// 		for (int i = n; i < s; i++) {
-// 			// System.out.println("in for");
-// 			if (n1 == 0) {
-// 				// System.out.println("in count");
-// 				break;
-// 			} else {
-// 				if (students[i].getCategory().equals(s)) {
-// 					// System.out.println("in if2");
-// 					System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
-// 					n1--;
-// 				}
-// 			}
-// 		}
-// 		if (n1 != 0) {
-// 			for (int i = n; i < size; i++) {
-// 				if (students[i].getCategory().equals("Open") && n1 > 0) {
-// 						System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
-// 						n1--;
-// 					}
-// 			}
-// 		}
-// 	}
-// 	/**.
-// 	 * { function_description }
-// 	 *
-// 	 * @param      n     { parameter_description }
-// 	 * @param      n1    The n 1
-// 	 */
-// 	// time complexity of this method is O(N). It iterates through the array to
-// // print all the objects in array.
-// 	public void vacancy4(int n, int n1) {
-// 		// System.out.println("st");
-// 		String s = "SC";
-// 		int count = 0;
-// 		for (int i =  n; i < size; i++) {
-// 			// System.out.println("for");
-// 			if (n1 == 0) {
-// 				// System.out.println("in count");
-// 				break;
-// 			} else {
-// 				if (students[i].getCategory().equals(s)) {
-// 					System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
-// 					n1--;
-// 				}
-// 			}
-// 		}
-// 		if (n1 != 0) {
-// 			for (int i = n; i < size; i++) {
-// 				if (students[i].getCategory().equals("Open") && n1 > 0) {
-// 						System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
-// 						n1--;
-// 					}
-// 			}
-// 		}
-// 	}
+	/**.
+	 * { function_description }
+	 *
+	 * @param      n     { parameter_description }
+	 * @param      n1    The n 1
+	 */
+	// time complexity of this method is O(N). It iterates through the array to
+// print all the objects in array.
+	public void vacancy3(int n, int n1) {
+		// System.out.println("in sc");
+		String s = "ST";
+		for (int i = n; i < size; i++) {
+			// System.out.println("in for");
+			if (n1 == 0) {
+				// System.out.println("in count");
+				break;
+			} else {
+				if (students[i].getCategory().equals(s)) {
+					// System.out.println("in if2");
+					System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
+					n1--;
+				}
+			}
+		}
+		if (n1 != 0) {
+			int c = n1;
+			for (int i = n; i < size; i++) {
+				if (c == 0) {
+					break;
+				} else {
+					System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
+					c--;
+				}
+			}
+		}
+	}
+	/**.
+	 * { function_description }
+	 *
+	 * @param      n     { parameter_description }
+	 * @param      n1    The n 1
+	 */
+	// time complexity of this method is O(N). It iterates through the array to
+// print all the objects in array.
+	public void vacancy4(int n, int n1) {
+		// System.out.println("st");
+		String s = "SC";
+		int count = 0;
+		for (int i =  n; i < size; i++) {
+			// System.out.println("for");
+			if (n1 == 0) {
+				// System.out.println("in count");
+				break;
+			} else {
+				if (students[i].getCategory().equals(s)) {
+					System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
+					n1--;
+				}
+			}
+		}
+		if (n1 != 0) {
+			int c = n1;
+			for (int i = n; i < size; i++) {
+				if (c == 0) {
+					break;
+				} else {
+					System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
+					c--;
+				}
+			}
+		}
+	}
 }
 
