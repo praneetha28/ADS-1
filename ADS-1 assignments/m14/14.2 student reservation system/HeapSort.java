@@ -85,7 +85,7 @@ class HeapSort {
 		return str;
 	}
 	public boolean contains(int[] arr, int s) {
-		for (int i = 0; i < arr.length; i++) {
+		for (int i : arr) {
 			if (s == i) {
 				return true;
 			}
@@ -113,55 +113,56 @@ class HeapSort {
 	// time complexity of this method is O(N). It iterates through the array to
 // print all the objects in array.
 	public void vacancy2(int n, int n1, int n2, int n3) {
-		int[] reserved = new int[n1 + n2 + n3];
-		int k = 0;
-		for (int i = n; i < size; i++) {
-				if (students[i].getCategory().equals("BC") && n1 > 0) {
-					reserved[k++] = i;
-					n1--;
-				} else if (students[i].getCategory().equals("SC") && n2 > 0) {
-					reserved[k++] = i;
-					n2--;
-				} else if (students[i].getCategory().equals("ST") && n3 > 0) {
-					reserved[k++] = i;
-					n3--;
-				}
-		}
-		if (n1 > 0) {
-			for (int i = n; i < size; i++) {
-				if (students[i].getCategory().equals("Open") && n1 > 0) {
-					if (!contains(reserved, i)) {
-						reserved[k++] = i;
-						n1--;
-					}
-				}
-			}
-		}
-		if (n2 > 0) {
-			for (int i = n; i < size; i++) {
-				if (students[i].getCategory().equals("Open") && n2 > 0) {
-					if (!contains(reserved, i)) {
-						reserved[k++] = i;
-						n2--;
-					}
-
-				}
-			}
-		}
-		if (n3 > 0) {
-			for (int i = n; i < size; i++) {
-				if (students[i].getCategory().equals("Open") && n3 > 0) {
-					if (!contains(reserved, i)) {
-						reserved[k++] = i;
-						n3--;
-					}
-				}
-			}
-		}
-		Arrays.sort(reserved);
-		for (int j = 0; j < reserved.length; j++) {
-			System.out.println(students[j].getName() + "," + students[j].getTotal() + "," + students[j].getCategory());
-		}
+		int[] array = new int[n1 + n2 + n3];
+       	int i = 0;
+        for(int k = n;k < size; k++) {
+            if(students[k].getCategory().equals("BC") && n1 > 0) {
+                array[i++] = k;
+                n1--;
+            }
+            else if(students[k].getCategory().equals("SC") && n2 > 0) {
+                array[i++] = k;
+                n2--;
+            }
+            else if(students[k].getCategory().equals("ST") && n3 > 0) {
+                array[i++] = k;
+                n3--;
+            }
+        }
+        if (n1 > 0) {
+           for (int k = n; k < size; k++) {
+           if (students[k].getCategory().equals("Open") && n1 > 0) {
+                   if (!contains(array, k)) {
+                       array[i++] = k;
+                       n1--;
+                   }
+               }
+           }
+       }
+       if (n2 > 0) {
+           for (int k = n; k < size; k++) {
+           if (students[k].getCategory().equals("Open") && n2 > 0) {
+                   if (!contains(array, k)) {
+                       array[i++] = k;
+                       n2--;
+                   }
+               }
+           }
+       }
+       if (n3 > 0) {
+           for (int k = n; k < size; k++) {
+           if (students[k].getCategory().equals("Open") && n3 > 0) {
+                   if (!contains(array, k)) {
+                       array[i++] = k;
+                       n3--;
+                   }
+               }
+           }
+       }
+       Arrays.sort(array);
+       for (int k = 0; k < array.length; k++) {
+           System.out.println(students[array[k]].toString());
+       }
 	}
 // 	/**.
 // 	 * { function_description }
