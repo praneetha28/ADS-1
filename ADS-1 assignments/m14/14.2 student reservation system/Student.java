@@ -66,7 +66,7 @@ class Student {
      */
     public String getDate() {
         String revdate = "";
-        revdate = date.substring(6) + "-" + date.substring(3, 5) + "-" + date.substring(0, 2);
+        revdate = date.substring(2 + 2 + 2) + "-" + date.substring(2 + 1, 2 + 2 + 1) + "-" + date.substring(0, 2);
         return revdate;
     }
     /**.
@@ -109,6 +109,11 @@ class Student {
     public String getCategory() {
         return this.category;
     }
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public String print() {
         return this.getName() + "," + this.getTotal() + "," + this.getCategory();
     }
@@ -136,17 +141,21 @@ class Student {
                 } else if (this.getMarks2() < that.getMarks2()) {
                     return -1;
                 } else {
-                    // if (compareDate(this.getDate().compareTo(that.getDate()) < 0)) {
-                    //     return -1;
-                    // } else if (compareDate(this.getDate().compareTo(that.getDate()) > 0)) {
-                    //     return 1;
                     return compareDate(this.getDate(), that.getDate());
                 }
                 // return 0;
             }
         }
     }
-    public int compareDate(String d1, String d2) {
+    /**.
+     * { function_description }
+     *
+     * @param      d1    The d 1
+     * @param      d2    The d 2
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int compareDate(final String d1, final String d2) {
         int res = d1.compareTo(d2);
         if (res < 0) {
             return -1;
