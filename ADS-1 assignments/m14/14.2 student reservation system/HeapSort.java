@@ -126,8 +126,10 @@ class HeapSort {
 				if (c == 0) {
 					break;
 				} else {
-					System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
-					c--;
+					if (students[i].getCategory().equals("Open")) {
+						System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
+						c--;
+					}
 				}
 			}
 		}
@@ -162,8 +164,10 @@ class HeapSort {
 				if (c == 0) {
 					break;
 				} else {
-					System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
-					c--;
+					if (students[i].getCategory().equals("Open")) {
+						System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
+						c--;
+					}
 				}
 			}
 		}
@@ -198,8 +202,10 @@ class HeapSort {
 				if (c == 0) {
 					break;
 				} else {
-					System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
-					c--;
+					if (students[i].getCategory().equals("Open")) {
+						System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
+						c--;
+					}
 				}
 			}
 		}

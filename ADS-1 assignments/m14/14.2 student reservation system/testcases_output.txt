@@ -395,10 +395,10 @@ Raj,87,BC
 mahesh,87,BC
 riya,83,Open
 varsha,66,BC
-Aditya,80,ST
 Amit,76,Open
 Ajay,76,Open
 Arjun,75,Open
+rahul,73,Open
 shyam,71,ST
 ROHIT,70,SC
 ----------------------------------------
