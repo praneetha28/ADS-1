@@ -65,7 +65,9 @@ class Student {
      * @return     The date.
      */
     public String getDate() {
-        return this.date;
+        String revdate = "";
+        revdate = date.substring(6) + "-" + date.substring(3, 5) + "-" + date.substring(0, 2);
+        return revdate;
     }
     /**.
      * Gets the marks 1.
@@ -131,15 +133,22 @@ class Student {
                 } else if (this.getMarks2() < that.getMarks2()) {
                     return -1;
                 } else {
-                    if (this.getDate().compareTo(that.getDate()) < 0) {
-                        return -1;
-                    } else if (this.getDate().compareTo(that.getDate()) > 0) {
-                        return 1;
-                    } else {
-                        return 0;
-                    }
+                    // if (compareDate(this.getDate().compareTo(that.getDate()) < 0)) {
+                    //     return -1;
+                    // } else if (compareDate(this.getDate().compareTo(that.getDate()) > 0)) {
+                    //     return 1;
+                    return compareDate(this.getDate(), that.getDate());
                 }
+                // return 0;
             }
+        }
+    }
+    public int compareDate(String d1, String d2) {
+        int res = d1.compareTo(d2);
+        if (res < 0) {
+            return -1;
+        } else {
+            return 1;
         }
     }
 }

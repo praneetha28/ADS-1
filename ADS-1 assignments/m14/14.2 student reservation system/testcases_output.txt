@@ -356,16 +356,16 @@ priya,72,SC
 varsha,66,BC
 Your Output: 
 divya,99,ST
-Ishita,99,Open
 Deepak,99,Open
+Ishita,99,Open
 Ira,93,ST
 tanvi,90,BC
 Raj,87,BC
 mahesh,87,BC
 riya,83,Open
 Aditya,80,ST
-Amit,76,Open
 Ajay,76,Open
+Amit,76,Open
 Arjun,75,Open
 rahul,73,Open
 priya,72,SC
@@ -387,16 +387,16 @@ Aryan,32,ST
 Shreya,23,SC
 
 divya,99,ST
-Ishita,99,Open
 Deepak,99,Open
+Ishita,99,Open
 Ira,93,ST
 tanvi,90,BC
 Raj,87,BC
 mahesh,87,BC
 riya,83,Open
 varsha,66,BC
-Amit,76,Open
 Ajay,76,Open
+Amit,76,Open
 Arjun,75,Open
 rahul,73,Open
 shyam,71,ST
