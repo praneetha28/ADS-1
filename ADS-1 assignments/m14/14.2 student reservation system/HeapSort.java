@@ -84,6 +84,14 @@ class HeapSort {
 		}
 		return str;
 	}
+	public boolean contains(int[] arr, int s) {
+		for (int i = 0; i < arr.length; i++) {
+			if (s == i) {
+				return true;
+			}
+		}
+		return false;
+	}
 	/**.
 	 * { function_description }
 	 *
@@ -122,24 +130,31 @@ class HeapSort {
 		if (n1 > 0) {
 			for (int i = n; i < size; i++) {
 				if (students[i].getCategory().equals("Open") && n1 > 0) {
-					reserved[k++] = i;
-					n1--;
+					if (!contains(reserved, i)) {
+						reserved[k++] = i;
+						n1--;
+					}
 				}
 			}
 		}
 		if (n2 > 0) {
 			for (int i = n; i < size; i++) {
 				if (students[i].getCategory().equals("Open") && n2 > 0) {
-					reserved[k++] = i;
-					n2--;
+					if (!contains(reserved, i)) {
+						reserved[k++] = i;
+						n2--;
+					}
+
 				}
 			}
 		}
 		if (n3 > 0) {
 			for (int i = n; i < size; i++) {
 				if (students[i].getCategory().equals("Open") && n3 > 0) {
-					reserved[k++] = i;
-					n3--;
+					if (!contains(reserved, i)) {
+						reserved[k++] = i;
+						n3--;
+					}
 				}
 			}
 		}
