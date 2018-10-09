@@ -3,10 +3,12 @@ Starting audit...
 [ERROR] F:\ADS-1\ADS-1 assignments\m14\14.2 student reservation system\Student.java:69:34: '6' is a magic number. [MagicNumber]
 [ERROR] F:\ADS-1\ADS-1 assignments\m14\14.2 student reservation system\Student.java:69:60: '3' is a magic number. [MagicNumber]
 [ERROR] F:\ADS-1\ADS-1 assignments\m14\14.2 student reservation system\Student.java:69:63: '5' is a magic number. [MagicNumber]
-[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.2 student reservation system\Student.java:136: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.2 student reservation system\Student.java:138: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.2 student reservation system\Student.java:146:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.2 student reservation system\Student.java:146:28: Parameter d1 should be final. [FinalParameters]
-[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.2 student reservation system\Student.java:146:39: Parameter d2 should be final. [FinalParameters]
+[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.2 student reservation system\Student.java:112:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.2 student reservation system\Student.java:113: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.2 student reservation system\Student.java:139: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.2 student reservation system\Student.java:141: Line is longer than 80 characters (found 94). [LineLength]
+[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.2 student reservation system\Student.java:149:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.2 student reservation system\Student.java:149:28: Parameter d1 should be final. [FinalParameters]
+[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.2 student reservation system\Student.java:149:39: Parameter d2 should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 11 errors.

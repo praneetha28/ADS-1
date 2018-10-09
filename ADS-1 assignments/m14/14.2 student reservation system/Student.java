@@ -109,6 +109,9 @@ class Student {
     public String getCategory() {
         return this.category;
     }
+    public String print() {
+        return this.getName() + "," + this.getTotal() + "," + this.getCategory();
+    }
     // time complexity of this method is O(1) as it checks one time.
     /**.
      * { function_description }

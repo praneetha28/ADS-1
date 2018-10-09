@@ -161,7 +161,7 @@ class HeapSort {
        }
        Arrays.sort(array);
        for (int k = 0; k < array.length; k++) {
-           System.out.println(students[array[k]].toString());
+           System.out.println(students[array[k]].print());
        }
 	}
 // 	/**.
