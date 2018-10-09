@@ -44,6 +44,6 @@ public final class Solution {
         sort.sort();
         System.out.println(sort.toString());
         sort.vacancy1(vac1);
-        sort.vacancy2(vac1, vac2, vac3, vac4);
+        sort.vacancy2(noOfVacancies, vac1, vac2, vac3, vac4);
     }
 }
