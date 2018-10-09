@@ -150,16 +150,11 @@ class HeapSort {
 			}
 		}
 		if (n1 != 0) {
-			int c = n1;
 			for (int i = n; i < size; i++) {
-				if (c == 0) {
-					break;
-				} else {
-					if (students[i].getCategory().equals("Open")) {
+				if (students[i].getCategory().equals("Open") && n1 > 0) {
 						System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
-						c--;
+						n1--;
 					}
-				}
 			}
 		}
 	}
@@ -188,16 +183,11 @@ class HeapSort {
 			}
 		}
 		if (n1 != 0) {
-			int c = n1;
 			for (int i = n; i < size; i++) {
-				if (c == 0) {
-					break;
-				} else {
-					if (students[i].getCategory().equals("Open")) {
+				if (students[i].getCategory().equals("Open") && n1 > 0) {
 						System.out.println(students[i].getName() + "," + students[i].getTotal() + "," + students[i].getCategory());
-						c--;
+						n1--;
 					}
-				}
 			}
 		}
 	}
