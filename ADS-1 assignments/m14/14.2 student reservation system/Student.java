@@ -66,7 +66,8 @@ class Student {
      */
     public String getDate() {
         String revdate = "";
-        revdate = date.substring(2 + 2 + 2) + "-" + date.substring(2 + 1, 2 + 2 + 1) + "-" + date.substring(0, 2);
+        revdate = date.substring(2 + 2 + 2) + "-" + date.substring(2 + 1, 2 + 2 + 1)
+         + "-" + date.substring(0, 2);
         return revdate;
     }
     /**.
@@ -115,7 +116,8 @@ class Student {
      * @return     { description_of_the_return_value }
      */
     public String print() {
-        return this.getName() + "," + this.getTotal() + "," + this.getCategory();
+        return this.getName() + "," + this.getTotal() + "," +
+         this.getCategory();
     }
     // time complexity of this method is O(1) as it checks one time.
     /**.
