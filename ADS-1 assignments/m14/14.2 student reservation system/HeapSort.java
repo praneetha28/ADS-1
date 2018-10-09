@@ -34,7 +34,7 @@ class HeapSort {
 	/**.
 	 * { function_description }
 	 */
-	// time complexity of this method is O(N^2). It access the array elements twice
+	// time complexity of this method is O(N log N). It access the array elements twice
 	public void sort() {
         int n = size;
         for (int k = n/2; k >= 1; k--) {
@@ -45,16 +45,21 @@ class HeapSort {
             sink(students, 1, n);
         }
     }
-
+    // time complexity of this method is O(log N). It access the array elements twice
     public void sink(Student[] students, int k, int n) {
         while (2*k <= n) {
             int j = 2*k;
-            if (j < n && less(students, j, j+1)) j++;
-            if (!less(students, k, j)) break;
+            if (j < n && less(students, j, j+1))  {
+            	j++;
+            }
+            if (!less(students, k, j)) {
+            	break;
+            }
             swap(students, k, j);
             k = j;
         }
     }
+    // time complexity of this method is O(1).
     public boolean less(Student[] students, int i, int j) {
         return students[i - 1].compareTo(students[j-1]) >= 0;
     }
@@ -85,6 +90,7 @@ class HeapSort {
 		}
 		return str;
 	}
+	// time complexity of this method is O(N). It iterates through the array to
 	public boolean contains(int[] arr, int s) {
 		for (int i : arr) {
 			if (s == i) {
