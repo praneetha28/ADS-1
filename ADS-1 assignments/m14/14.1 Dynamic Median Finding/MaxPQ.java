@@ -1,34 +1,10 @@
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-
-/**
- *  The {@code MaxPQ} class represents a priority queue of generic keys.
- *  It supports the usual <em>insert</em> and <em>delete-the-maximum</em>
- *  operations, along with methods for peeking at the maximum key,
- *  testing if the priority queue is empty, and iterating through
- *  the keys.
- *  <p>
- *  This implementation uses a binary heap.
- *  The <em>insert</em> and <em>delete-the-maximum</em> operations take
- *  logarithmic amortized time.
- *  The <em>max</em>, <em>size</em>, and <em>is-empty</em> operations take constant time.
- *  Construction takes time proportional to the specified capacity or the number of
- *  items used to initialize the data structure.
- *  <p>
- *  For additional documentation, see <a href="https://algs4.cs.princeton.edu/24pq">Section 2.4</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
- *
- *  @param <Key> the generic type of key on this priority queue
- */
-
 public class MaxPQ<Key> implements Iterable<Key> {
-    private Key[] pq;                    // store items at indices 1 to n
-    private int n;                       // number of items on priority queue
-    private Comparator<Key> comparator;  // optional comparator
+    private Key[] pq;
+    private int n;
+    private Comparator<Key> comparator;
 
     /**
      * Initializes an empty priority queue with the given initial capacity.
@@ -84,7 +60,7 @@ public class MaxPQ<Key> implements Iterable<Key> {
             sink(k);
         assert isMaxHeap();
     }
-      
+
 
 
     /**
@@ -116,8 +92,6 @@ public class MaxPQ<Key> implements Iterable<Key> {
         if (isEmpty()) throw new NoSuchElementException("Priority queue underflow");
         return pq[1];
     }
-
-    // helper function to double the size of the heap array
     private void resize(int capacity) {
         assert capacity > n;
         Key[] temp = (Key[]) new Object[capacity];
@@ -127,7 +101,7 @@ public class MaxPQ<Key> implements Iterable<Key> {
         pq = temp;
     }
 
-
+// time complexity is O(log N)
     /**
      * Adds a new key to this priority queue.
      *
@@ -143,7 +117,7 @@ public class MaxPQ<Key> implements Iterable<Key> {
         swim(n);
         assert isMaxHeap();
     }
-
+// time complexity is O(log N)
     /**
      * Removes and returns a largest key on this priority queue.
      *
@@ -160,19 +134,14 @@ public class MaxPQ<Key> implements Iterable<Key> {
         assert isMaxHeap();
         return max;
     }
-
-
-   /***************************************************************************
-    * Helper functions to restore the heap invariant.
-    ***************************************************************************/
-
+    // time complexity is O(log N)
     private void swim(int k) {
         while (k > 1 && less(k/2, k)) {
             exch(k, k/2);
             k = k/2;
         }
     }
-
+// time complexity is O(log N)
     private void sink(int k) {
         while (2*k <= n) {
             int j = 2*k;
@@ -182,10 +151,7 @@ public class MaxPQ<Key> implements Iterable<Key> {
             k = j;
         }
     }
-
-   /***************************************************************************
-    * Helper functions for compares and swaps.
-    ***************************************************************************/
+// time complexity is O(1)
     private boolean less(int i, int j) {
         if (comparator == null) {
             return ((Comparable<Key>) pq[i]).compareTo(pq[j]) < 0;
@@ -194,19 +160,18 @@ public class MaxPQ<Key> implements Iterable<Key> {
             return comparator.compare(pq[i], pq[j]) < 0;
         }
     }
-
+// time complexity is O(1)
     private void exch(int i, int j) {
         Key swap = pq[i];
         pq[i] = pq[j];
         pq[j] = swap;
     }
 
-    // is pq[1..N] a max heap?
+
     private boolean isMaxHeap() {
         return isMaxHeap(1);
     }
 
-    // is subtree of pq[1..n] rooted at k a max heap?
     private boolean isMaxHeap(int k) {
         if (k > n) return true;
         int left = 2*k;
@@ -215,11 +180,6 @@ public class MaxPQ<Key> implements Iterable<Key> {
         if (right <= n && less(k, right)) return false;
         return isMaxHeap(left) && isMaxHeap(right);
     }
-
-
-   /***************************************************************************
-    * Iterator.
-    ***************************************************************************/
 
     /**
      * Returns an iterator that iterates over the keys on this priority queue
