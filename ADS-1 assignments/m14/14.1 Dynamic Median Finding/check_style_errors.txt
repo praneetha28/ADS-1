@@ -1,9 +1,5 @@
 Starting audit...
-[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.1 Dynamic Median Finding\Solution.java:2: Class Solution should be declared as final. [FinalClass]
-[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.1 Dynamic Median Finding\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.1 Dynamic Median Finding\Solution.java:4:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.1 Dynamic Median Finding\Solution.java:4:22: '(' is preceded with whitespace. [MethodParamPad]
-[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.1 Dynamic Median Finding\Solution.java:8:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.1 Dynamic Median Finding\Solution.java:8:29: Parameter args should be final. [FinalParameters]
+[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.1 Dynamic Median Finding\Solution.java:22:29: Parameter args should be final. [FinalParameters]
+[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.1 Dynamic Median Finding\Solution.java:27:9: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 2 errors.
