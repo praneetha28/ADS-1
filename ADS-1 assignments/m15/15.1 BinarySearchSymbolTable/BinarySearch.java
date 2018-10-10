@@ -8,9 +8,7 @@ class BinarySearch<Key extends Comparable<Key>, Value> {
 		keys = (Key[]) new Comparable[30];
 		values = (Value[]) new Object[30];
 	}
-	// public void resize() {
-
-	// }
+	// time complexity is O(N).
 	public void put(Key k, Value v) {
 		if (k == null) {
 			System.out.println("key is null");
@@ -33,9 +31,11 @@ class BinarySearch<Key extends Comparable<Key>, Value> {
 		values[index] = v;
 		size++;
 	}
+	// time complexity is O(log N).
 	public boolean contains(Key k) {
     	return get(k) != null;
-    	}
+    }
+    // time complexity is O(log N).
     public Value get(Key k) {
     	if (isEmpty()) {
     		return null;
@@ -46,12 +46,15 @@ class BinarySearch<Key extends Comparable<Key>, Value> {
 		}
 		return null;
     }
+    // time complexity is O(1).
     public Key max() {
     	return keys[size - 1];
     }
+    	// time complexity is O(1).
     public Key min() {
     	return keys[0];
     }
+    	// time complexity is O(log N).
     public Key floor(Key k) {
     	if (k == null) {
         	System.out.println("null");
@@ -66,6 +69,7 @@ class BinarySearch<Key extends Comparable<Key>, Value> {
 			return keys[index - 1];
 		}
     }
+    	// time complexity is O(log N).
 	public int rank(Key k) {
 		if (k == null) {
 			System.out.println("null");
@@ -85,6 +89,7 @@ class BinarySearch<Key extends Comparable<Key>, Value> {
 		}
 		return low;
 	}
+	// time complexity is O(N).
 	public void delete(Key k) {
 		if (k == null) {
 			return;
