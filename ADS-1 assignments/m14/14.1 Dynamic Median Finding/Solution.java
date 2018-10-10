@@ -6,14 +6,15 @@ import java.util.Scanner;
  * Class for solution.
  */
 public final class Solution {
-	/**.
-	 * Constructs the object.
-	 */
+    /**.
+     * Constructs the object.
+     */
     private Solution() {
-    	/**.
-    	 * { item_description }
-    	 */
+        /**.
+         * { item_description }
+         */
     }
+    // time complexity is O(N).
     /**.
      * { function_description }
      *

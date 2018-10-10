@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] F:\ADS-1\ADS-1 assignments\m14\14.1 Dynamic Median Finding\Solution.java:9:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 1 errors.
