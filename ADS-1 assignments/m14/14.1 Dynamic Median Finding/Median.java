@@ -22,12 +22,12 @@ class Median {
             median = (min.min() + max.max()) / 2;
             System.out.println(median);
         }
-        if (min.size() > max.size()) {
-            median = min.min();
-            System.out.println(median);
-        }
         if (max.size() > min.size()) {
             median = max.max();
+            System.out.println(median);
+        }
+        if (min.size() > max.size()) {
+            median = min.min();
             System.out.println(median);
         }
     }
