@@ -1,9 +1,2 @@
 Starting audit...
-[ERROR] F:\ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:4: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
-[ERROR] F:\ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:34: Line is longer than 80 characters (found 118). [LineLength]
-[ERROR] F:\ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:34:84: '3' is a magic number. [MagicNumber]
-[ERROR] F:\ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:34:114: '4' is a magic number. [MagicNumber]
-[ERROR] F:\ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:37: Line is longer than 80 characters (found 109). [LineLength]
-[ERROR] F:\ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:37:103: '3' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 6 errors.

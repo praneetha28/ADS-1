@@ -1,7 +1,7 @@
 /**.
  * { item_description }
  */
-import java.util.*;
+import java.util.Scanner;
 /**.
  * { item_description }
  */
@@ -31,10 +31,13 @@ public final class Solution {
             // System.out.println(Arrays.toString(tokens));
             switch (tokens[0]) {
                 case"put":
-                    bst.put(new Book(tokens[1], tokens[2], Float.parseFloat(tokens[3])), Integer.parseInt(tokens[4]));
+                    bst.put(new Book(tokens[1], tokens[2],
+                     Float.parseFloat(tokens[2 + 1])),
+                      Integer.parseInt(tokens[2 + 2]));
                     break;
                 case"get":
-                    System.out.println(bst.get(new Book(tokens[1], tokens[2], Float.parseFloat(tokens[3]))));
+                    System.out.println(bst.get(new Book(tokens[1], tokens[2],
+                     Float.parseFloat(tokens[2 + 1]))));
                     break;
                 default:
                 break;
