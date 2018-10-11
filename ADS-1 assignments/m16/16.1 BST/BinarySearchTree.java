@@ -44,7 +44,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 		return get(head, k);
 	}
 	public Value get(Node head, Book k) {
-		System.out.println("deepak");
+		// System.out.println("deepak");
 		if (k == null) {
 			System.out.println("key is null");
 		}
