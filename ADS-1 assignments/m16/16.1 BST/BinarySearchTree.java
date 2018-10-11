@@ -10,6 +10,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 		private Node left;
 		private Node right;
 	}
+	// time complexity is O (log N)
 	public void put(Book k, Value v) {
 		if (k == null) {
 			System.out.println("key is null");
@@ -20,6 +21,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 		// }
 		head = put(head, k, v);
 	}
+	// time complexity is O (log N)
 	public Node put(Node head, Book k, Value v) {
 		if (head == null) {
 			Node n = new Node();
@@ -40,9 +42,11 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 		}
 		return head;
 	}
+	// time complexity is O (log N)
 	public Value get(Book k) {
 		return get(head, k);
 	}
+	// time complexity is O (log N)
 	public Value get(Node head, Book k) {
 		// System.out.println("deepak");
 		if (k == null) {
