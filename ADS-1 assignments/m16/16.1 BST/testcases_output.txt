@@ -1,0 +1,44 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+1
+Your Output: 
+deepak
+1
+----------------------------------------
+########## Testcase 1: Failed ##########
+Expected Output: 
+6
+5
+7
+2
+Your Output: 
+deepak
+deepak
+deepak
+6
+deepak
+deepak
+deepak
+5
+deepak
+deepak
+deepak
+7
+deepak
+deepak
+2
+----------------------------------------
+########## Testcase 2: Failed ##########
+Expected Output: 
+null
+7
+Your Output: 
+deepak
+deepak
+deepak
+null
+deepak
+deepak
+deepak
+7
+----------------------------------------
