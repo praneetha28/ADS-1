@@ -150,12 +150,8 @@ public class MaxPQ<Key> {
     }
 // time complexity is O(1)
     private boolean less(int i, int j) {
-        if (comparator == null) {
+
             return (pq[i].compareTo(pq[j])) < 0;
-        }
-        else {
-            return comparator.compare(pq[i], pq[j]) < 0;
-        }
     }
 // time complexity is O(1)
     private void exch(int i, int j) {
