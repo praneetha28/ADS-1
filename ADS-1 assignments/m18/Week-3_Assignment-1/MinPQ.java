@@ -112,7 +112,7 @@ public class MinPQ<Key> {
         if (n == pq.length - 1) resize(2 * pq.length);
 
         // add x, and percolate it up to maintain heap invariant
-        pq[n++] = x;
+        pq[++n] = x;
         swim(n);
     }
 // time complexity is O(log N)

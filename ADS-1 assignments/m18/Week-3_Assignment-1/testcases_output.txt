@@ -72,12 +72,24 @@ Sanofi India 0.21
 Tasty Bite Eat 0.23
 WABCO India 0.33
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Stock.compareTo(Stock.java:15)
-	at MinPQ.greater(MinPQ.java:163)
-	at MinPQ.swim(MinPQ.java:146)
-	at MinPQ.insert(MinPQ.java:116)
-	at Solution.main(Solution.java:38)
+Merck Ltd 4.83
+ICRA 2.84
+Schaeffler India 2.57
+TTK Prestige 2.15
+Bharat Rasayan 2.0
+
+Bosch 0.3
+Abbott India 0.46
+MRF 0.48
+Oracle Fin 0.52
+Bajaj Finserv 0.64
+
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at Solution.main(Solution.java:55)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -153,12 +165,24 @@ Fine Organic Industries Ltd. 0.29
 Vinati Organics 1.03
 Chola Inv Fin 1.47
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Stock.compareTo(Stock.java:15)
-	at MinPQ.greater(MinPQ.java:163)
-	at MinPQ.swim(MinPQ.java:146)
-	at MinPQ.insert(MinPQ.java:116)
-	at Solution.main(Solution.java:38)
+Larsen & Toubro 4.11
+Vinati Organics 4.03
+APL Apollo Tube 3.18
+Fine Organic Industries Ltd. 2.29
+Chola Inv Fin 1.47
+
+Nalwa Sons Invst -0.06
+Jubilant Food 0.08
+Endurance Technologies Ltd. 0.1
+NIIT Tech 0.21
+Ceat 0.23
+
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at Solution.main(Solution.java:55)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -239,12 +263,24 @@ WABCO India 0.33
 1
 3
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Stock.compareTo(Stock.java:15)
-	at MinPQ.greater(MinPQ.java:163)
-	at MinPQ.swim(MinPQ.java:146)
-	at MinPQ.insert(MinPQ.java:116)
-	at Solution.main(Solution.java:38)
+Merck Ltd 4.83
+ICRA 2.84
+Schaeffler India 2.57
+TTK Prestige 2.15
+Bharat Rasayan 2.0
+
+Bosch 0.3
+Abbott India 0.46
+MRF 0.48
+Oracle Fin 0.52
+Bajaj Finserv 0.64
+
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at Solution.main(Solution.java:55)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -325,12 +361,24 @@ Chola Inv Fin 1.47
 4
 0
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Stock.compareTo(Stock.java:15)
-	at MinPQ.greater(MinPQ.java:163)
-	at MinPQ.swim(MinPQ.java:146)
-	at MinPQ.insert(MinPQ.java:116)
-	at Solution.main(Solution.java:38)
+Larsen & Toubro 4.11
+Vinati Organics 4.03
+APL Apollo Tube 3.18
+Fine Organic Industries Ltd. 2.29
+Chola Inv Fin 1.47
+
+Nalwa Sons Invst -0.06
+Jubilant Food 0.08
+Endurance Technologies Ltd. 0.1
+NIIT Tech 0.21
+Ceat 0.23
+
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at Solution.main(Solution.java:55)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -426,10 +474,22 @@ Schaeffler India
 TTK Prestige
 Tasty Bite Eat
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Stock.compareTo(Stock.java:15)
-	at MinPQ.greater(MinPQ.java:163)
-	at MinPQ.swim(MinPQ.java:146)
-	at MinPQ.insert(MinPQ.java:116)
-	at Solution.main(Solution.java:38)
+Merck Ltd 4.83
+Schaeffler India 2.57
+TTK Prestige 2.15
+ICRA 2.15
+Bharat Rasayan 2.0
+
+Bosch 0.3
+Abbott India 0.48
+MRF 0.48
+Oracle Fin 0.52
+Bajaj Finserv 0.64
+
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at Solution.main(Solution.java:55)
 ----------------------------------------
