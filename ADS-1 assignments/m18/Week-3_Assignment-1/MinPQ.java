@@ -159,12 +159,7 @@ public class MinPQ<Key> {
         }
     }
     private boolean greater(int i, int j) {
-        if (comparator == null) {
-            return (pq[i].compareTo(pq[j]) > 0);
-        }
-        else {
-            return comparator.compare(pq[i], pq[j]) > 0;
-        }
+            return pq[i].compareTo(pq[j]) > 0;
     }
     private void exch(int i, int j) {
         Stock swap = pq[i];

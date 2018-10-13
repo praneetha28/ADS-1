@@ -40,11 +40,11 @@ public final class Solution {
             }
             MinPQ minpq = new MinPQ();
             MaxPQ maxpq = new MaxPQ();
-            for (int k = 0; k < 5; k++) {
-                minpq.insert(min.delMin());
-            }
             for (int l = 0; l < 5; l++) {
                 maxpq.insert(max.delMax());
+            }
+            for (int k = 0; k < 5; k++) {
+                minpq.insert(min.delMin());
             }
             // System.out.println("max...");
             System.out.println(maxpq.toString());
