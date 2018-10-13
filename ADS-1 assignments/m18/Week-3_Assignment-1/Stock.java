@@ -25,6 +25,6 @@ class Stock {
 		}
 	}
 	public String toString() {
-		return this.getName() + "," + this.getValue();
+		return this.getName() + " " + this.getValue();
 	}
 }
