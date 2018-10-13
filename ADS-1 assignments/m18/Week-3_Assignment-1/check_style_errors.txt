@@ -1,9 +1,2 @@
 Starting audit...
-[ERROR] F:\ADS-1\ADS-1 assignments\m18\Week-3_Assignment-1\Stock.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\ADS-1\ADS-1 assignments\m18\Week-3_Assignment-1\Stock.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\ADS-1\ADS-1 assignments\m18\Week-3_Assignment-1\Stock.java:8:16: Variable 'name' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\ADS-1\ADS-1 assignments\m18\Week-3_Assignment-1\Stock.java:12:15: Variable 'value' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\ADS-1\ADS-1 assignments\m18\Week-3_Assignment-1\Stock.java:19:28: 'name' hides a field. [HiddenField]
-[ERROR] F:\ADS-1\ADS-1 assignments\m18\Week-3_Assignment-1\Stock.java:19:46: 'value' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 6 errors.
