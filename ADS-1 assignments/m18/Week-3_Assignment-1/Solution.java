@@ -52,7 +52,7 @@ public final class Solution {
             // System.out.println("min....");
             System.out.println(minpq.toString());
             System.out.println();
-            int m = sc.nextInt();
+            // int m = sc.nextInt();
             // for (int a = 0; a < minpq.length; a++) {
             //     bsminimum.insert(minpq[a]);
             // }
