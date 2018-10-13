@@ -1,3 +1,6 @@
+/**.
+ * Class for taxicab.
+ */
 class Taxicab implements Comparable<Taxicab> {
     /**.
      * { var_description }
