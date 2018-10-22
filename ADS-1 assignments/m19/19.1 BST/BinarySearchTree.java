@@ -61,9 +61,11 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 			return head.value;
 		}
 	}
+	// time complexity is O (log N)
 	public Book min() {
 		return min(head).key;
 	}
+	// time complexity is O (log N)
 	public Node min(Node head) {
 		if (head.left == null) {
 			return head;
@@ -71,9 +73,11 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 			return min(head.left);
 		}
 	}
+	// time complexity is O (log N)
 	public Book max() {
 		return max(head).key;
 	}
+	// time complexity is O (log N)
 	public Node max(Node head) {
 		if (head.right == null) {
 			return head;
@@ -81,6 +85,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 			return max(head.right);
 		}
 	}
+	// time complexity is O (log N)
 	public Book floor(Book k) {
 		Node n = floor(head, k);
 		if (n == null) {
@@ -89,6 +94,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 			return n.key;
 		}
 	}
+	// time complexity is O (log N)
 	public Node floor(Node head, Book k) {
 		if (head == null) {
 			return null;
@@ -107,6 +113,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 			return head;
 		}
 	}
+	// time complexity is O (log N)
 	public Book ceil(Book k) {
 		Node n = ceil(head, k);
 		if (n == null) {
@@ -115,6 +122,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 			return n.key;
 		}
 	}
+	// time complexity is O (log N)
 	public Node ceil(Node head, Book k) {
 		if (head == null) {
 			return null;
@@ -133,6 +141,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 			return head;
 		}
 	}
+	// time complexity is O (log N)
 	public Book select(int k) {
 		if (k < 0 || k >= size(head)) {
 			System.out.println("invalid");
@@ -140,6 +149,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 		Node n = select(head, k);
 		return n.key;
 	}
+	// time complexity is O (log N)
 	public Node select(Node head, int k) {
 		if (head == null) {
 			return null;
@@ -153,9 +163,11 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 			return head;
 		}
 	}
+	// time complexity is O (log N)
 	public int rank(Book k) {
 		return rank(head, k);
 	}
+	// time complexity is O (log N)
 	public int rank(Node head, Book k) {
 		if (head == null) {
 			return 0;
@@ -169,14 +181,30 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 			return size(head.left);
 		}
 	}
+	// time complexity is O (1)
 	public int size() {
 		return size(head);
 	}
+	// time complexity is O (1)
 	public int size(Node head) {
 		if (head == null) {
 			return 0;
 		} else {
 			return head.count;
+		}
+	}
+	// time complexity is O (N)
+	public void keys() {
+		keys(head);
+	}
+	// time complexity is O (N)
+	public void keys(Node head) {
+		if (head == null) {
+			return;
+		} else {
+			keys(head.left);
+			System.out.println(head.key);
+			keys(head.right);
 		}
 	}
 }

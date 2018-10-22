@@ -56,6 +56,9 @@ public final class Solution {
                 case"select":
                     System.out.println(bst.select(Integer.parseInt(tokens[1])));
                     break;
+                case"iterable":
+                    bst.keys();
+                    break;
                 default:
                 break;
             }
