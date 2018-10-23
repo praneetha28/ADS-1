@@ -208,7 +208,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 		}
 	}
 	public void deleteMin() {
-		deleteMin(head);
+		head = deleteMin(head);
 	}
 	public Node deleteMin(Node head) {
 		if (head.left == null) {
@@ -219,7 +219,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 		return head;
 	}
 	public void deleteMax() {
-		deleteMax(head);
+		head = deleteMax(head);
 	}
 	public Node deleteMax(Node head) {
 		if (head.right == null) {
@@ -229,8 +229,8 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 		head.count = 1 + size(head.left) + size(head.right);
 		return head;
 	}
-	public Node delete(Book k) {
-		return delete(head, k);
+	public void delete(Book k) {
+		head = delete(head, k);
 	}
 	public Node delete(Node head, Book k) {
 		if (head == null) {
