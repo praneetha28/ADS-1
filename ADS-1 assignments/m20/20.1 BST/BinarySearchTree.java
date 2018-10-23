@@ -230,34 +230,23 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 		return head;
 	}
 	public void delete(Book k) {
-		if (k == null) {
-			return;
-		} else {
-			delete(head, k);
-		}
+		delete(head, k);
 	}
-	public Node delete(Node head, Book k) {
-		if (head == null) {
-			return null;
-		}
-		int i = k.compareTo(head.key);
-		if (i < 0) {
-			head.left = delete(head.left, k);
-		} else if (i > 0) {
-			head.right = delete(head.right, k);
-		} else {
-			if (head.right == null) {
-				return head.left;
-			}
-			if (head.left == null) {
-				return head.right;
-			}
-			Node n = head;
-			head = min(n.right);
-			head.right = deleteMin(n.right);
-			head.left = n.left;
-		}
-		head.count = 1 + size(head.left) + size(head.right);
-		return head;
+	public Node delete(Node current, Book key) {
+		if (current == null) return null;
+	    int cmp = key.compareTo(current.key);
+	    if      (cmp < 0) current.left  = delete(current.left,  key);
+	    else if (cmp > 0) current.right = delete(current.right, key);
+	    else {
+	        if (current.right == null) return current.left;
+
+	        if (current.left  == null) return current.right;
+	        Node t = current;
+	        current = min(t.right);
+	        current.right = deleteMin(t.right);
+	        current.left = t.left;
+	    }
+	    current.count = size(current.left) + size(current.right) + 1;
+	    return current;
 	}
 }
