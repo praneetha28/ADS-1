@@ -58,7 +58,7 @@ class HashTable {
 	// 	ht[h].delete(key);
 	// }
 	public boolean contains(String key) {
-		return get(key) != -1;
+		return get(key) == -1;
 	}
 	public void display() {
 		for (int i = 0; i < ht.length; i++) {

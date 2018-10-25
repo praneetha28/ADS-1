@@ -39,7 +39,7 @@ public final class Solution {
         int c = 0;
         for (int i = 0; i < tokens2.length; i++) {
             // System.out.println("...");
-            if (htable.contains(tokens2[i])) {
+            if (!htable.contains(tokens2[i])) {
                 for (int j = 0; j < tokens2.length; j++) {
                     if (tokens2[i].equals(tokens2[j])) {
                         c++;
