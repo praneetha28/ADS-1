@@ -30,31 +30,31 @@ public final class Solution {
         String line1 = sc.nextLine();
         String[] tokens1 = line1.split(" ");
         for (int i = 0; i < tokens1.length; i++) {
-            htable.put(tokens1[i], i);
+            htable.put(tokens1[i], 1);
         }
-        // htable.display();
         String line2 = sc.nextLine();
         String[] tokens2 = line2.split(" ");
-        // int num = 0;
-        int c = 0;
+        int[] arr = new int[tokens2.length];
         for (int i = 0; i < tokens2.length; i++) {
-            // System.out.println("...");
-            if (!htable.contains(tokens2[i])) {
-                for (int j = 0; j < tokens2.length; j++) {
-                    if (tokens2[i].equals(tokens2[j])) {
-                        c++;
-                    } else {
-                        c = 0;
-                    }
-                // htable.delete(tokens2[i]);
-                // htable.display();
-                }
+            if (htable.contains(tokens2[i])) {
+                int n = htable.get(tokens2[i]);
+                arr[i] = --n;
+                htable.put(tokens2[i], n);
             }
         }
-        if (c != 0) {
-            System.out.println("No");
-        } else {
+        int c = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < 0) {
+                c++;
+                break;
+            } else {
+                c = 0 ;
+            }
+        }
+        if (c == 0) {
             System.out.println("Yes");
+        } else {
+            System.out.println("No");
         }
     }
 }

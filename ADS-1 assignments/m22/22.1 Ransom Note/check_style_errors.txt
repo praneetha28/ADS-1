@@ -1,4 +1,5 @@
 Starting audit...
 [ERROR] F:\ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] F:\ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:51:22: ';' is preceded with whitespace. [NoWhitespaceBefore]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 2 errors.
