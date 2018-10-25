@@ -30,7 +30,11 @@ public final class Solution {
         String line1 = sc.nextLine();
         String[] tokens1 = line1.split(" ");
         for (int i = 0; i < tokens1.length; i++) {
-            htable.put(tokens1[i], 1);
+            if (htable.contains(tokens1[i])) {
+                htable.put(tokens1[i], htable.get(tokens1[i]) + 1);
+            } else {
+                htable.put(tokens1[i], 1);
+            }
         }
         String line2 = sc.nextLine();
         String[] tokens2 = line2.split(" ");
