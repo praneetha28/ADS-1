@@ -50,15 +50,12 @@ public final class Solution {
             }
         }
         int c = 0;
-        // for (int i = 0; i < arr.length; i++) {
-        //     System.out.println(arr[i]);
-        // }
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] < 0) {
                 c++;
                 break;
             } else {
-                c = 0 ;
+                c = 0;
             }
         }
         if (c == 0) {
