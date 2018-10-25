@@ -22,7 +22,7 @@ class HashTable {
 			return this.getKey() + " " + this.getValue();
 		}
 	}
-
+	// time complexity is O(N)
 	public void put(String key, int value) {
 		int h = hashKey(key);
 		Node t = ht[h];
@@ -36,9 +36,11 @@ class HashTable {
 		ht[h] = new Node(key, value, ht[h]);
 		size++;
 	}
+	// time complexity is O(1)
 	public int hashKey(String key) {
 		return (key.hashCode() & 0x7fffffff) % M;
 	}
+	// time complexity is O(N)
 	public int get(String key) {
 		int h = hashKey(key);
 		Node t = ht[h];
@@ -57,9 +59,11 @@ class HashTable {
 	// 	}
 	// 	ht[h].delete(key);
 	// }
+	// time complexity is O(N)
 	public boolean contains(String key) {
 		return get(key) != -1;
 	}
+	// time complexity is O(N)
 	public void display() {
 		for (int i = 0; i < ht.length; i++) {
 			System.out.println(ht[i]);
