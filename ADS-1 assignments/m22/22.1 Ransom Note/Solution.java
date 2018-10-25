@@ -52,9 +52,9 @@ public final class Solution {
             }
         }
         if (c != 0) {
-            System.out.println("no");
+            System.out.println("No");
         } else {
-            System.out.println("yes");
+            System.out.println("Yes");
         }
     }
 }
