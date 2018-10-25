@@ -36,16 +36,19 @@ public final class Solution {
         String[] tokens2 = line2.split(" ");
         int[] arr = new int[tokens2.length];
         for (int i = 0; i < tokens2.length; i++) {
+            int n = htable.get(tokens2[i]);
+            // System.out.println(n);
             if (htable.contains(tokens2[i])) {
-                int n = htable.get(tokens2[i]);
                 arr[i] = --n;
                 htable.put(tokens2[i], n);
             } else {
-                System.out.println("No");
-                return;
+                arr[i] = n;
             }
         }
         int c = 0;
+        // for (int i = 0; i < arr.length; i++) {
+        //     System.out.println(arr[i]);
+        // }
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] < 0) {
                 c++;
