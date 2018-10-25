@@ -40,6 +40,9 @@ public final class Solution {
                 int n = htable.get(tokens2[i]);
                 arr[i] = --n;
                 htable.put(tokens2[i], n);
+            } else {
+                System.out.println("No");
+                return;
             }
         }
         int c = 0;
