@@ -23,9 +23,6 @@ class HashTable<Key, Value> {
 	}
 	// time complexity is O(N)
 	public Value get(Key key) {
-		if (size >= M / 2) {
-			resize();
-		}
 		int h = hashKey(key);
 		for (int i = h; keys[i] != null; i = (i + 1) % M) {
 			if (keys[i].equals(key)) {
