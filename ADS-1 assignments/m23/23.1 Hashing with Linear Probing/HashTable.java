@@ -6,12 +6,13 @@ class HashTable<Key, Value> {
 	String[] k = new String[M];
 	Value[] v = (Value[]) new Object[M];
 	int s = 0;
+	int vl = 0;
 	int size = 0;
 	// time complexity is O(N)
 	public void put(String key, Value value) {
 		int h = hashKey(key);
 		k[s++] = key;
-		v[s++] = value;
+		v[vl++] = value;
 		for (int i = h; keys[i] != null; i = (i + 1) % M) {
 			if (keys[i].equals(key)) {
 				values[i] = value;
@@ -37,6 +38,22 @@ class HashTable<Key, Value> {
 		return null;
 	}
 	public void delete(String key) {
+		for (int i = 0; i < s; i++) {
+			if (k[i] == null) {
+				return;
+			}
+			if (k[i].equals(key)) {
+				k[i] = null;
+				v[i] = null;
+				s--;
+				vl--;
+				// System.out.println("after deleted");
+				break;
+			} else {
+				return;
+			}
+		}
+		// System.out.println("...");
 		if (!contains(key)) {
 			return;
 		}
