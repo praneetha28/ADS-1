@@ -78,10 +78,7 @@ public class HashTable<Key, Value> {
     }
 
     /**
-     * Inserts the specified key-value pair into the symbol table, overwriting the old
-     * value with the new value if the symbol table already contains the specified key.
-     * Deletes the specified key (and its associated value) from this symbol table
-     * if the specified value is {@code null}.
+     time complexity in average case:constant time
      *
      * @param  key the key
      * @param  val the value
@@ -111,7 +108,7 @@ public class HashTable<Key, Value> {
     }
 
     /**
-     * Returns the value associated with the specified key.
+     time complexity in average case:constant time
      * @param key the key
      * @return the value associated with {@code key};
      *         {@code null} if no such value
@@ -126,9 +123,7 @@ public class HashTable<Key, Value> {
     }
 
     /**
-     * Removes the specified key and its associated value from this symbol table
-     * (if the key is in this symbol table).
-     *
+     time complexity in average case:constant time
      * @param  key the key
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
@@ -163,28 +158,8 @@ public class HashTable<Key, Value> {
 
         // halves size of array if it's 12.5% full or less
         if (n > 0 && n <= m/8) resize(m/2);
-
-        assert check();
     }
-    private boolean check() {
-
-        // check that hash table is at most 50% full
-        if (m < 2*n) {
-            System.err.println("Hash table size m = " + m + "; array size n = " + n);
-            return false;
-        }
-
-        // check that each key in table can be found by get()
-        for (int i = 0; i < m; i++) {
-            if (keys[i] == null) continue;
-            else if (get(keys[i]) != vals[i]) {
-                System.err.println("get[" + keys[i] + "] = " + get(keys[i]) + "; vals[i] = " + vals[i]);
-                return false;
-            }
-        }
-        return true;
-    }
-
+    //time complexity is O(N).
 	public String display() {
 		String s = "{";
 		if (size() == 0) {
