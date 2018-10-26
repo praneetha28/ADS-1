@@ -1,12 +1,17 @@
 import java.util.Arrays;
 class HashTable<Key, Value> {
 	private int M = 30001;
-	private Key[] keys = (Key[]) new Object[M];
+	private String[] keys = new String[M];
 	private Value[] values = (Value[]) new Object[M];
+	String[] k = new String[M];
+	Value[] v = (Value[]) new Object[M];
+	int s = 0;
 	int size = 0;
 	// time complexity is O(N)
-	public void put(Key key, Value value) {
+	public void put(String key, Value value) {
 		int h = hashKey(key);
+		k[s++] = key;
+		v[s++] = value;
 		for (int i = h; keys[i] != null; i = (i + 1) % M) {
 			if (keys[i].equals(key)) {
 				values[i] = value;
@@ -18,11 +23,11 @@ class HashTable<Key, Value> {
 		size++;
 	}
 	// time complexity is O(1)
-	public int hashKey(Key key) {
+	public int hashKey(String key) {
 		return (key.hashCode() * 11) % M;
 	}
 	// time complexity is O(N)
-	public Value get(Key key) {
+	public Value get(String key) {
 		int h = hashKey(key);
 		for (int i = h; keys[i] != null; i = (i + 1) % M) {
 			if (keys[i].equals(key)) {
@@ -31,7 +36,7 @@ class HashTable<Key, Value> {
 		}
 		return null;
 	}
-	public void delete(Key key) {
+	public void delete(String key) {
 		if (!contains(key)) {
 			return;
 		}
@@ -43,7 +48,7 @@ class HashTable<Key, Value> {
 		values[h] = null;
 		h = (h + 1) % M;
 		while (keys[h] != null) {
-			Key keyRehash = keys[h];
+			String keyRehash = keys[h];
 			Value valueRehash = values[h];
 			keys[h] = null;
 			values[h] = null;
@@ -57,7 +62,7 @@ class HashTable<Key, Value> {
 		// }
 	}
 	// time complexity is O(N)
-	public boolean contains(Key key) {
+	public boolean contains(String key) {
 		return get(key) != null;
 	}
 	public void resize() {
@@ -67,13 +72,13 @@ class HashTable<Key, Value> {
 	// time complexity is O(N)
 	public String display() {
 		String s = "{";
-		for (int i = 0; i < keys.length - 1; i++) {
-			if (keys[i] != null) {
-				s += keys[i] + ":" + values[i] +", ";
+		for (int i = 0; i < k.length - 1; i++) {
+			if (k[i] != null) {
+				s += k[i] + ":" + v[i] +", ";
 			}
 		}
-		if (keys[keys.length - 1] != null) {
-				s += keys[keys.length - 1] + ":" + values[keys.length - 1] +"}";
+		if (k[k.length - 1] != null) {
+				s += k[k.length - 1] + ":" + v[k.length - 1] +"}";
 		} else {
 			s = s.substring(0, s.length() - 2) + "}";
 		}
