@@ -45,14 +45,13 @@ class HashTable<Key, Value> {
 			if (k[i].equals(key)) {
 				k[i] = null;
 				v[i] = null;
-				s--;
-				vl--;
 				// System.out.println("after deleted");
-				break;
 			} else {
 				return;
 			}
 		}
+		s--;
+		vl--;
 		// System.out.println("...");
 		if (!contains(key)) {
 			return;
