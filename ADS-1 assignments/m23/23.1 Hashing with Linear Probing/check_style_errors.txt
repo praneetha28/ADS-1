@@ -1,0 +1,4 @@
+Starting audit...
+[ERROR] F:\ADS-1\ADS-1 assignments\m23\23.1 Hashing with Linear Probing\Solution.java:33:19: 'switch' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 1 errors.
