@@ -30,7 +30,7 @@ public final class Solution {
         for (int i = 0; i < n; i++) {
             String line = sc.nextLine();
             String[] tokens = line.split(" ");
-            switch(tokens[0]) {
+            switch (tokens[0]) {
                 case"put":
                     htable.put(tokens[1], Integer.parseInt(tokens[2]));
                     break;
