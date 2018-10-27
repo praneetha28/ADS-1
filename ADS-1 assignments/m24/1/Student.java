@@ -12,6 +12,6 @@ class Student {
 		return this.marks;
 	}
 	public String toString() {
-		return this.getName() + " " + this.getMarks();
+		return this.getName() + "," + this.getMarks();
 	}
 }

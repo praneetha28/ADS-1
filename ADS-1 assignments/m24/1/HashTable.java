@@ -114,21 +114,13 @@ public class HashTable<Key, Value> {
         Value v = get(key);
         String s = "";
         s+= v;
-        String[] str = s.split(" ");
+        String[] str = s.split(",");
         if (v == null) {
             return "Student doesn't exists...";
         } else if (num == 1) {
-            if (str.length == 3) {
-                return str[0] + " " + str[1];
-            } else {
-                return str[0];
-            }
+            return str[0];
         } else {
-            if (str.length == 3) {
-                return str[2];
-            } else {
-                return str[1];
-            }
+            return str[1];
         }
     }
     public Value get(Key key) {
