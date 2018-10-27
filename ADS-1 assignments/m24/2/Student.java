@@ -13,8 +13,8 @@ class Student {
     /**.
      * Constructs the object.
      *
-     * @param      name  The name
-     * @param      m     { parameter_description }
+     * @param      roll  The name
+     * @param      name     { parameter_description }
      */
     Student(final int roll, final String name) {
 
@@ -45,7 +45,14 @@ class Student {
     public String toString() {
         return this.getRoll() + "," + this.getName();
     }
-    public int compareTo(Student that) {
+    /**.
+     * { function_description }
+     *
+     * @param      that  The that
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int compareTo(final Student that) {
         if (this.getRoll() > that.getRoll()) {
             return 1;
         } else if (this.getRoll() < that.getRoll()) {

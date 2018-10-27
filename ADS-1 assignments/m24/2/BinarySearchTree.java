@@ -270,8 +270,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
             return;
         } else {
         	between(head.left, d1, d2);
-        	if (head.value >= d1 &&head.value <= d2) {
-
+        	if (head.value >= d1 && head.value <= d2) {
         		String s = "";
         		s += head.key;
         		String[] key = s.split(",");
@@ -298,7 +297,6 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         	}
         	greater(head.right, d1);
         }
-
 	}
 	public void less(double d1) {
 		less(head, d1);
