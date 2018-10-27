@@ -262,9 +262,11 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 		head.count = 1 + size(head.left) + size(head.right);
 		return head;
 	}
+	// time complexity is 1
 	public void between(double d1, double d2) {
 		between(head, d1, d2);
 	}
+	// time complexity is O (N)
 	public void between(Node head, double d1, double d2) {
 		if (head == null) {
             return;
@@ -280,9 +282,11 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         }
 
 	}
+	// time complexity is 1
 	public void greater(double d1) {
 		greater(head, d1);
 	}
+	// time complexity is O (N)
 	public void greater(Node head, double d1) {
 		if (head == null) {
             return;
@@ -298,9 +302,11 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         	greater(head.right, d1);
         }
 	}
+	// time complexity is 1
 	public void less(double d1) {
 		less(head, d1);
 	}
+	// time complexity is O (N)
 	public void less(Node head, double d1) {
 		if (head == null) {
             return;
