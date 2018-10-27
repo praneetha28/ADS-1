@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] F:\ADS-1\ADS-1 assignments\m24\1\Student.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\ADS-1\ADS-1 assignments\m24\1\Student.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 2 errors.
