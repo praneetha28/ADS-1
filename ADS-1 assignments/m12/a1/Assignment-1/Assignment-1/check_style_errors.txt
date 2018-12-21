@@ -1,0 +1,44 @@
+Starting audit...
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Solution.java:40: Line is longer than 80 characters (found 82). [LineLength]
+Audit done.
+Checkstyle ends with 1 errors.
+Starting audit...
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:8:19: Variable 'students' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:12:13: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:17:40: '30' is a magic number. [MagicNumber]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:25:25: Parameter s should be final. [FinalParameters]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:39: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:41:32: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:42: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:42:74: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:42:75: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:43:36: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:43:37: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:55:26: Parameter students should be final. [FinalParameters]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:55:36: 'students' hides a field. [HiddenField]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:55:46: Parameter j should be final. [FinalParameters]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:55:53: Parameter min should be final. [FinalParameters]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:69: Line is longer than 80 characters (found 125). [LineLength]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:78: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:80:30: Parameter n should be final. [FinalParameters]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:83: Line is longer than 80 characters (found 131). [LineLength]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:92: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:94:30: Parameter n should be final. [FinalParameters]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:94:37: Parameter n1 should be final. [FinalParameters]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:105: Line is longer than 80 characters (found 147). [LineLength]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:116: Line is longer than 80 characters (found 147). [LineLength]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:128: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:130:30: Parameter n should be final. [FinalParameters]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:130:37: Parameter n1 should be final. [FinalParameters]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:141: Line is longer than 80 characters (found 147). [LineLength]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:152: Line is longer than 80 characters (found 147). [LineLength]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:164: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:166:30: Parameter n should be final. [FinalParameters]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:166:37: Parameter n1 should be final. [FinalParameters]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:177: Line is longer than 80 characters (found 147). [LineLength]
+[ERROR] F:\ADS-1\ADS-1 assignments\m12\a1\Assignment-1\Assignment-1\Sorting.java:188: Line is longer than 80 characters (found 147). [LineLength]
+Audit done.
+Checkstyle ends with 35 errors.
+Starting audit...
+Audit done.
